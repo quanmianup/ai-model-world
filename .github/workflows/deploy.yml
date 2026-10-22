@@ -41,6 +41,13 @@ jobs:
       - name: Build static export
         run: npm run build
 
+      - name: Verify build output
+        run: |
+          echo "== 构建产物自检 =="
+          du -sh out .next 2>/dev/null || true
+          find out -type f 2>/dev/null | wc -l
+          test -f out/index.html || { echo "::error::out/index.html 不存在，构建未产出静态文件"; exit 1; }
+
       - name: Commit data snapshot
         run: |
           git config user.name "github-actions[bot]"
