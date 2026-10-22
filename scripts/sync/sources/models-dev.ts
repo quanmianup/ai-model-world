@@ -192,6 +192,8 @@ export const CODING_LEAGUE_ORDER: string[] = [
   'deepswe',
   'livebench_coding',
   'livebench_agentic_coding',
+  // LiveBench 2.0 的编程分项：换了一套长程任务题集，与 1.x 不可比，单列一档。
+  'livebench2_coding',
   'cursorbench',
   'swe_atlas_codebase_qna',
   'swe_atlas_refactoring',

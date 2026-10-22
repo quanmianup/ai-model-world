@@ -3,7 +3,7 @@
   "coding": {
     "_note": "ModelRecord.coding[] 的落地情况。一个赛制一条成绩，跨赛制永不混算。byLeague 是「该赛制覆盖了几个模型」，各赛制之间会重叠（一个模型可以有多条成绩）。flagship 是广场首屏当家门面的命中率——全站覆盖率会被长尾微调模型稀释，首屏才是用户真正看到的东西；without 如实列出仍然没有任何编程成绩的门面。modelsOnlyElo 是只有 WebDev Arena Elo、没有任何百分数成绩的模型：它们能排名，但读不出「解决了几成任务」，前端别把 Elo 塞进百分数的分位池。",
     "byAttribution": {
-      "third-party": 685,
+      "third-party": 733,
       "vendor-self-reported": 232
     },
     "byLeague": {
@@ -16,6 +16,7 @@
       "frontier_code": 49,
       "frontier_swe": 5,
       "gso": 38,
+      "livebench2_coding": 48,
       "livecodebench": 8,
       "livecodebench_pro": 2,
       "livecodebench_v6": 1,
@@ -40,12 +41,12 @@
     "byUnit": {
       "elo": 134,
       "index": 180,
-      "pct": 603
+      "pct": 651
     },
     "flagship": {
       "total": 40,
       "withAnyCoding": 12,
-      "withPercentCoding": 9,
+      "withPercentCoding": 10,
       "without": [
         "ai21/jamba-mini",
         "aisingapore/gemma-sea-lion-v4-27b-it",
@@ -78,8 +79,8 @@
       ]
     },
     "liveModels": 688,
-    "modelsOnlyElo": 48,
-    "modelsWithAny": 251
+    "modelsOnlyElo": 46,
+    "modelsWithAny": 254
   },
   "codingLeaguesBlocked": {
     "_note": "通过了合规过滤、但因为口径不是「写代码 / 软件工程」而没有进入 coding[] 的榜单，以及因为血缘指向 Artificial Analysis / LMArena 而被拦掉的条数。逐条理由写在 scripts/sync/sources/models-dev.ts 的 CODING_LEAGUES 与 sources/epoch.ts 的 CODING_BENCHMARKS 上方。",
@@ -198,23 +199,23 @@
       "total": 719
     },
     "coding.两条以上赛制": {
-      "filled": 192,
-      "pct": 26.7,
+      "filled": 193,
+      "pct": 26.8,
       "total": 719
     },
     "coding.任一百分数成绩": {
-      "filled": 210,
-      "pct": 29.2,
+      "filled": 215,
+      "pct": 29.9,
       "total": 719
     },
     "coding.任一编程成绩": {
-      "filled": 258,
-      "pct": 35.9,
+      "filled": 261,
+      "pct": 36.3,
       "total": 719
     },
     "coding.有第三方复核成绩": {
-      "filled": 230,
-      "pct": 32,
+      "filled": 237,
+      "pct": 33,
       "total": 719
     },
     "contextWindow": {
@@ -308,13 +309,13 @@
       "total": 719
     },
     "scores.三条以上榜单": {
-      "filled": 294,
-      "pct": 40.9,
+      "filled": 298,
+      "pct": 41.4,
       "total": 719
     },
     "scores.任一成绩": {
-      "filled": 369,
-      "pct": 51.3,
+      "filled": 372,
+      "pct": 51.7,
       "total": 719
     },
     "trainingComputeFlop": {
@@ -1599,6 +1600,14 @@
       "arena_text_to_video": 6,
       "arena_video_edit": 2,
       "claw_eval": 6,
+      "livebench2_browser": 48,
+      "livebench2_coding": 48,
+      "livebench2_data_analysis": 48,
+      "livebench2_design": 48,
+      "livebench2_long_agentic": 48,
+      "livebench2_overall": 48,
+      "livebench2_reasoning": 48,
+      "livebench2_research": 48,
       "livebench_agentic_coding": 1,
       "livebench_coding": 3,
       "livecodebench": 8,
@@ -1962,16 +1971,30 @@
     },
     "liveModels": 688
   },
-  "generatedAt": "2026-10-22T09:09:36.515Z",
+  "generatedAt": "2026-10-22T10:49:03.285Z",
   "livebench": {
-    "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
-    "matchedModels": 0,
-    "releaseSource": "LIVE_BENCH_RELEASES",
+    "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。**2026-10 起上游改版成 LiveBench 2.0**，榜单数据在 data/<release>/breakdown.json，release 清单从站点 JS bundle 里解析（上游每发一版就把 id 加进那个数组），解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。2.0 的七个分类与 v1 的两个分组是**不同的赛制**：id 带 livebench2_ 前缀，分数不可互相比较。v1 时期的老规矩一并记着：releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
+    "matchedModels": 48,
+    "releaseSource": "v2/bundle",
     "releasesSkipped": [],
-    "releasesUsed": [],
-    "rowsByLeague": {},
-    "unmatchedSamples": [],
-    "upstreamModelNames": 0
+    "releasesUsed": [
+      "20261014"
+    ],
+    "rowsByLeague": {
+      "livebench2_browser": 49,
+      "livebench2_coding": 49,
+      "livebench2_data_analysis": 49,
+      "livebench2_design": 49,
+      "livebench2_long_agentic": 49,
+      "livebench2_overall": 49,
+      "livebench2_reasoning": 49,
+      "livebench2_research": 49
+    },
+    "unmatchedSamples": [
+      "beam-1.0"
+    ],
+    "upstreamModelNames": 49,
+    "v2Release": "20261014"
   },
   "quickPromoted": {
     "_note": "走「注册厂商单源快速晋升」进入快照的模型：厂商在 src/data/vendor-registry.ts 里登记过，且被 openrouter 或 vercel-gateway 任一源收录（litellm 单源不算）。目的是大厂新模型上线当天就能进站，不必等第二个网关跟上。",
@@ -2019,8 +2042,8 @@
       "ok": true
     },
     "livebench": {
-      "note": "没有拿到任何可用 release（清单来源 LIVE_BENCH_RELEASES，共 11 个）",
-      "ok": false
+      "note": "LiveBench 2.0（2026-10 起）。上游整站重写，v1 的 table_<release>.csv / categories_<release>.json 已全部下线（404），数据改从 data/<release>/breakdown.json 取。2.0 是长程任务评测（跑几个月的运维、做 PPT/PDF、写研究报告），与 v1 的题目集不是同一把尺子，**两条赛制的分数不可比较**，故赛制 id 一律 `livebench2_` 前缀另起一池。release 20261014 是完整快照（七个分类每个都有全部型号），不需要像 v1 那样跨 release 取并集。`livebench2_overall` 是本站按七类等权算的均分，上游不发布这个数。",
+      "ok": true
     },
     "lmarena": {
       "note": "7/7 个分榜，共 334 条 Arena 分",

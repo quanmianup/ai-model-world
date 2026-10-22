@@ -129,15 +129,21 @@ async function main(): Promise<number> {
   writeRaw('livebench', {
     _note:
       'LiveBench 官方榜（Apache-2.0；docs/DATASHEET.md 明文「There are no copyrights on the data.」）。' +
-      '上游 CSV 是按 task 的宽表，这里保存的是按 categories_<release>.json 分组取算术平均之后的结果。' +
-      '**只采用题目集换代之后的同期 release**：实测同一个模型跨 2025-04-02 ↔ 2025-04-25 这个断点，' +
-      'Coding 分中位数差 27.6 分、最大 41.9 分，跨断点混算会让档位取决于模型碰巧在哪个 release 被跑过。' +
+      '**当前是 LiveBench 2.0**：上游 2026-10 整站重写，v1 的 table_<release>.csv / categories_<release>.json ' +
+      '两个端点已全部 404，数据改在 data/<release>/breakdown.json 里（一个文件装下七个分类与全部分项）。' +
+      '2.0 评的是长程任务（跑几个月的运维、做 PPT/PDF、写研究报告），与 v1 的题目集不是同一把尺子，' +
+      '所以赛制 id 一律 livebench2_ 前缀另起一池，v1 的 livebench_coding 原样保留、两者不可比。' +
+      'livebench2_overall 是本站按七类等权算的均分，上游不发布这个数。' +
+      'v1 时期的老规矩一并记着：只采用题目集换代之后的同期 release，' +
+      '实测同一个模型跨 2025-04-02 ↔ 2025-04-25 这个断点，Coding 分中位数差 27.6 分、最大 41.9 分，' +
+      '跨断点混算会让档位取决于模型碰巧在哪个 release 被跑过。' +
       '仓库 LICENSE 开头那段 lm-sys/FastChat 版权声明只是代码血缘，题目与分数都是 LiveBench 自己跑的，' +
       '与 LMArena 的众包投票无关，不触发 LMArena 的 ToS。',
     fetchedAt: livebench.status.fetchedAt,
     releaseSource: livebench.releaseSource,
     releasesUsed: livebench.releasesUsed,
     releasesSkipped: livebench.releasesSkipped,
+    v2Release: livebench.v2Release,
     counts: livebench.counts,
     byModel: Object.fromEntries(
       [...livebench.byModel.entries()].sort(([a], [b]) => (a < b ? -1 : 1)),
@@ -270,12 +276,16 @@ async function main(): Promise<number> {
     livebench: {
       _note:
         'LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。' +
-        'release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——' +
+        '**2026-10 起上游改版成 LiveBench 2.0**，榜单数据在 data/<release>/breakdown.json，' +
+        'release 清单从站点 JS bundle 里解析（上游每发一版就把 id 加进那个数组），解析失败才用内置兜底清单——' +
         '写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。' +
-        'releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。',
+        '2.0 的七个分类与 v1 的两个分组是**不同的赛制**：id 带 livebench2_ 前缀，分数不可互相比较。' +
+        'v1 时期的老规矩一并记着：releasesSkipped 里是题目集换代之前的 release，' +
+        '跨那个断点分数不可比（中位差 27.6 分）。',
       releaseSource: livebench.releaseSource,
       releasesUsed: livebench.releasesUsed,
       releasesSkipped: livebench.releasesSkipped,
+      v2Release: livebench.v2Release,
       rowsByLeague: livebench.counts,
       ...built.liveBenchMatch,
     },

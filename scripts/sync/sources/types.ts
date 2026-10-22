@@ -311,6 +311,14 @@ export interface LiveBenchScore {
   /** 上游的原始模型名（带 effort 后缀），只用于排查 */
   upstreamModel: string;
   sourceUrl: string;
+  /**
+   * 是否属于「编程口径」，决定这条成绩进 `coding[]` 还是只进 `scores[]`。
+   *
+   * v1 只有 Coding / Agentic Coding 两组，全部为 true；LiveBench 2.0 改成七类长程任务，
+   * 其中 Research / Design / Browser 这些量与「会不会写代码」无关，塞进 coding[]
+   * 会污染编程档位与卡片上那一行标签，所以逐条标记而不是按来源一刀切。
+   */
+  coding: boolean;
 }
 
 export interface LiveBenchResult {
@@ -322,4 +330,6 @@ export interface LiveBenchResult {
   /** 因题目集换代而不采用的 release */
   releasesSkipped: string[];
   releaseSource: string;
+  /** LiveBench 2.0 采用的 release id（`YYYYMMDD`）。走 v1 或两条都没抓到时为 null。 */
+  v2Release: string | null;
 }

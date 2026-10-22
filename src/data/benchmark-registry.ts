@@ -71,6 +71,58 @@ const GENERAL: Record<string, Entry> = {
     priority: 1,
     homepage: 'https://epoch.ai/benchmarks/eci',
   },
+  // ── LiveBench 2.0：长程任务评测，七个分类各占一列 ──
+  //    2.0 与 1.x 是两把不同的尺子（题集、评分方式全换了），所以 id 一律带 `2_`；
+  //    旧版的 livebench_coding 原样保留，两者分数不可直接比较。
+  livebench2_overall: {
+    label: 'LiveBench 2.0 综合',
+    blurb: 'LiveBench 2.0 七个长程任务分类的等权均分——这个总分由本站计算，上游并不发布。',
+    category: '综合',
+    priority: 2,
+    homepage: 'https://livebench.ai/',
+  },
+  livebench2_long_agentic: {
+    label: '长程任务',
+    blurb: '跑几个月的运维、财务合规、电商运营这类长线任务，看模型能不能一直把事做对。',
+    category: '智能体',
+    priority: 20,
+    homepage: 'https://livebench.ai/',
+  },
+  livebench2_browser: {
+    label: '浏览器操作',
+    blurb: '在真实网页里点选、翻页、汇总信息，考验 agent 是不是真的会用浏览器。',
+    category: '智能体',
+    priority: 25,
+    homepage: 'https://livebench.ai/',
+  },
+  livebench2_reasoning: {
+    label: '推理谜题',
+    blurb: '心理理论、斑马谜题、空间推理这类不靠背题的死磕题。',
+    category: '游戏与谜题',
+    priority: 30,
+    homepage: 'https://livebench.ai/',
+  },
+  livebench2_research: {
+    label: '带引用的研究',
+    blurb: '监管、法律、财税、科研五类检索与研判任务，答案要带得住核验的出处。',
+    category: '知识与推理',
+    priority: 30,
+    homepage: 'https://livebench.ai/',
+  },
+  livebench2_data_analysis: {
+    label: '数据分析',
+    blurb: '从表格里认事件、连表、把一种格式转成另一种格式。',
+    category: '知识与推理',
+    priority: 35,
+    homepage: 'https://livebench.ai/',
+  },
+  livebench2_design: {
+    label: '文档与排版',
+    blurb: '产出 Word 文档、PDF、PPT 三类成品，看内容组织与版式。',
+    category: '写作',
+    priority: 30,
+    homepage: 'https://livebench.ai/',
+  },
   simplebench: {
     label: 'SimpleBench',
     blurb: '一套普通人能轻松答对、模型却常常答错的常识题。分数越高越少犯「一看就傻」的错。',

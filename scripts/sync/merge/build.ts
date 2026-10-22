@@ -370,20 +370,37 @@ export async function buildSnapshot(input: BuildInput): Promise<BuildOutput> {
    * 于是 GPT-5.1 这种主力型号一个都匹配不上；而 exact 一眼就能认出
    * `gpt-5.1` 才是那个基座模型——它的 id 归一后**恰好就是** `gpt51`。
    */
-  const liveBenchExact = new Map<string, string>();
-  const liveBenchExactDupes = new Set<string>();
+  //   匹配分三级，优先级即可信度：
+  //     1) 型号名级：上游型号名归一后**完全等于**某个模型的 id 片段（`claude-haiku-4-5`）。
+  //        这是最硬的证据——它认的是「型号本身」。
+  //     2) 展示名级：等于某个模型的展示名（`Claude Haiku 4.5`）。它认的是「厂商怎么写它」，
+  //        会和别人的型号名撞键，所以只能排第二。
+  //     3) ladder：逐级剥后缀后的宽松候选，只在唯一命中时采信。
+  //
+  //   为什么 1 和 2 必须分开：`anthropic/claude-haiku-4-5`（基座，展示名带 "(latest)"）
+  //   和 `anthropic/claude-haiku-4-5-20251001`（日期戳快照，展示名就叫 "Claude Haiku 4.5"）
+  //   撞在同一个键上——快照的**展示名**正好等于基座的**型号名**。合成一张表时，
+  //   这个键会被当成「两人同名」而整个丢掉，于是 LiveBench 的 claude-haiku-4.5 谁都匹配不上。
+  //   分开建表后，型号名级认基座（id 就是这个型号），展示名级认快照。
+  const liveBenchExactById = new Map<string, string>();
+  const liveBenchExactByIdDupes = new Set<string>();
+  const liveBenchExactByName = new Map<string, string>();
+  const liveBenchExactByNameDupes = new Set<string>();
   const liveBenchLadder = new Map<string, Set<string>>();
   for (const c of promoted) {
     const md = modelsDev.facts.get(c.id) ?? null;
-    for (const basis of [c.modelSlug, md?.name ?? '']) {
+    for (const [basis, exact, dupes] of [
+      [c.modelSlug, liveBenchExactById, liveBenchExactByIdDupes],
+      [md?.name ?? '', liveBenchExactByName, liveBenchExactByNameDupes],
+    ] as const) {
       if (!basis) continue;
       const variants = slugVariants(basis);
       const head = variants[0];
       if (head) {
-        if (liveBenchExact.has(head) && liveBenchExact.get(head) !== c.id) {
-          liveBenchExactDupes.add(head);
+        if (exact.has(head) && exact.get(head) !== c.id) {
+          dupes.add(head);
         } else {
-          liveBenchExact.set(head, c.id);
+          exact.set(head, c.id);
         }
       }
       for (const v of variants) {
@@ -393,11 +410,12 @@ export async function buildSnapshot(input: BuildInput): Promise<BuildOutput> {
       }
     }
   }
-  for (const dupe of liveBenchExactDupes) liveBenchExact.delete(dupe);
+  for (const dupe of liveBenchExactByIdDupes) liveBenchExactById.delete(dupe);
+  for (const dupe of liveBenchExactByNameDupes) liveBenchExactByName.delete(dupe);
 
   const lookupLiveBench = (slug: string): string | null => {
     for (const v of slugVariants(slug)) {
-      const exact = liveBenchExact.get(v);
+      const exact = liveBenchExactById.get(v) ?? liveBenchExactByName.get(v);
       if (exact) return exact;
       const owners = liveBenchLadder.get(v);
       if (owners?.size === 1) return [...owners][0];
@@ -744,6 +762,10 @@ export async function buildSnapshot(input: BuildInput): Promise<BuildOutput> {
       });
     }
     for (const entry of liveBenchByModelId.get(c.id) ?? []) {
+      // LiveBench 2.0 有七类，只有 Coding 是编程口径。
+      // Research / Design / Browser 那些塞进 coding[] 会让「编程能力」那一行
+      // 变成文档排版分，也会在算档位时和真正的解题率混在一个池子里。
+      if (!entry.coding) continue;
       pushCoding({
         league: entry.league,
         score: entry.score,
@@ -801,6 +823,19 @@ export async function buildSnapshot(input: BuildInput): Promise<BuildOutput> {
       }
     };
     for (const s of coding) pushScore(s);
+    // LiveBench 2.0 里与编程无关的六类（长程任务、推理、浏览器、数据分析、研究、设计）
+    // 只作为独立榜单进 scores[]，不进 coding[]。
+    for (const entry of liveBenchByModelId.get(c.id) ?? []) {
+      if (entry.coding) continue;
+      pushScore({
+        league: entry.league,
+        score: entry.score,
+        unit: 'pct',
+        attribution: 'third-party',
+        source: 'livebench',
+        sourceUrl: entry.sourceUrl,
+      });
+    }
     if (epochHit) {
       const fixedUnits: Record<string, BenchmarkScore['unit']> = { eci: 'index', webdev_arena_elo: 'elo' };
       for (const key of epochBenchKeys()) {
@@ -972,16 +1007,26 @@ export async function buildSnapshot(input: BuildInput): Promise<BuildOutput> {
         };
       }
       const unit = leagueUnit.get(league) ?? 'pct';
-      const isLiveBench = league.startsWith('livebench_');
+      // v1 是 `livebench_`、v2 是 `livebench2_`，两者的上游文件完全不同，标注也要分开。
+      const isLiveBench2 = league.startsWith('livebench2_');
+      const isLiveBench = /^livebench2?_/.test(league);
       const isArena = league.startsWith('arena_');
       return {
         id: league,
         sourceFile: isArena
           ? 'huggingface.co/datasets/lmarena-ai/leaderboard-dataset'
-          : isLiveBench
-            ? 'livebench.ai/table_<release>.csv'
-            : 'models.dev/models.json#benchmarks[]',
-        scoreColumn: isArena ? 'rating' : isLiveBench ? 'categories 分组均值' : 'score',
+          : isLiveBench2
+            ? 'livebench.ai/data/<release>/breakdown.json'
+            : isLiveBench
+              ? 'livebench.ai/table_<release>.csv'
+              : 'models.dev/models.json#benchmarks[]',
+        scoreColumn: isArena
+          ? 'rating'
+          : isLiveBench2
+            ? '分类内分项均分（livebench2_overall 是本站按七类等权算的均分）'
+            : isLiveBench
+              ? 'categories 分组均值'
+              : 'score',
         unit,
         // 上游没有元信息就是 null，不拿「百分数满分是 100」这类常识去填——前端按 unit 自己知道。
         randomBaseline: null,

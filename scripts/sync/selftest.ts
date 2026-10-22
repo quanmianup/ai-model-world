@@ -40,6 +40,8 @@ import { pickLiteLlmField } from './sources/litellm';
 import {
   categoryAverage,
   parseLiveBenchReleases,
+  parseLiveBenchV2Releases,
+  parseV2Breakdown,
   stripLiveBenchEffort,
 } from './sources/livebench';
 import type { EpochAggregate, EpochResult } from './sources/types';
@@ -762,6 +764,55 @@ check('裸的 -max 不能剥（qwen3.8-max 的 max 是型号的一部分）', st
 check('-flash 不能剥', stripLiveBenchEffort('gemini-3.5-flash-high'), 'gemini-3.5-flash');
 check('-nano 不能剥', stripLiveBenchEffort('gpt-5.4-nano-xhigh'), 'gpt-5.4-nano');
 check('没有后缀时原样返回', stripLiveBenchEffort('deepseek-v4-pro'), 'deepseek-v4-pro');
+
+// ── LiveBench 2.0 ──────────────────────────────────────────────────────
+// 2026-10 上游整站重写：v1 的 CSV 端点全下线，数据改在 data/<release>/breakdown.json。
+// 这几条锁住的是「换版之后最容易写错」的地方：release id 的形状、以及分项求均分的口径。
+check(
+  'v2 release id 从 bundle 的日期数组里抽出来（降序）',
+  parseLiveBenchV2Releases('const e=["20261014"],t=["20260901","20260701"]'),
+  ['20261014', '20260901', '20260701'],
+);
+check(
+  'v2 只认 8 位数字的数组，v1 的带横线日期不算',
+  parseLiveBenchV2Releases('const v=["2026-06-25","2026-10-14"]'),
+  [],
+);
+check(
+  'v2 不认明显不是年份的数字',
+  parseLiveBenchV2Releases('const x=["12345678"]'),
+  [],
+);
+check(
+  'v2 没有日期数组时返回空数组，交给兜底清单',
+  parseLiveBenchV2Releases('nothing here'),
+  [],
+);
+
+// breakdown.json 的结构：分类 → models → scores{分项: 分数}
+const v2Fixture = {
+  Coding: {
+    parts: ['a', 'b'],
+    models: { 'gpt-5.2': { scores: { a: 90, b: 70 } } },
+  },
+  Research: {
+    parts: ['r'],
+    models: { 'gpt-5.2': { scores: { r: 50 } } },
+  },
+  // 未知分类要被丢掉：上游加了新分类不该让本站凭空多出一列没解释的分数。
+  SomethingNew: { parts: ['x'], models: { 'gpt-5.2': { scores: { x: 99 } } } },
+  // 缺分项的型号：只对**跑过的**分项求均分，不补零。
+  Partial: { parts: ['p'], models: { 'gpt-5.2': { scores: { p: 60 } } } },
+};
+const v2Parsed = parseV2Breakdown(v2Fixture);
+check(
+  'v2 按分类解析出型号分数（分项取均分）',
+  [...v2Parsed.entries()].map(([k, v]) => [k, [...v.entries()]]),
+  [['gpt-5.2', [['Coding', 80], ['Research', 50]]]],
+);
+check('v2 丢掉未知分类', parseV2Breakdown({ Nope: { models: { x: { scores: { a: 1 } } } } }).size, 0);
+check('v2 遇到不是对象的东西返回空', parseV2Breakdown(null).size, 0);
+check('v2 遇到空 scores 返回空', parseV2Breakdown({ Coding: { models: { x: { scores: {} } } } }).size, 0);
 
 // ── 稳定序列化 ────────────────────────────────────────────────────────
 check(

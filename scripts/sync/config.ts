@@ -35,6 +35,14 @@ export const ENDPOINTS = {
   /** LiveBench 官方榜单。宽表 CSV + 分组定义 JSON，release 日期拼在文件名里。 */
   liveBenchTable: (release: string) => `https://livebench.ai/table_${release}.csv`,
   liveBenchCategories: (release: string) => `https://livebench.ai/categories_${release}.json`,
+  /**
+   * LiveBench 2.0（2026-10 起）。上游整站重写成单页应用，v1 的
+   * `table_<release>.csv` / `categories_<release>.json` 两个端点**已全部 404**，
+   * 榜单改成 `data/<release>/breakdown.json` 一个文件装下全部分类与分项。
+   * release id 是 8 位 `YYYYMMDD`（v1 是 `YYYY-MM-DD`，两边不可混用）。
+   */
+  liveBenchIndex: 'https://livebench.ai/',
+  liveBenchV2Breakdown: (release: string) => `https://livebench.ai/data/${release}/breakdown.json`,
   /** release 清单的权威出处是仓库里的 LIVE_BENCH_RELEASES 常量，抓不到时回落到内置清单。 */
   liveBenchReleasesSource:
     'https://raw.githubusercontent.com/LiveBench/LiveBench/main/livebench/common.py',
@@ -58,6 +66,14 @@ export const LIVEBENCH_FALLBACK_RELEASES = [
   '2024-06-24', '2024-07-26', '2024-08-31', '2024-11-25', '2025-04-02', '2025-04-25',
   '2025-05-30', '2025-11-25', '2025-12-23', '2026-01-08', '2026-06-25',
 ];
+
+/**
+ * LiveBench 2.0 的 release id 兜底（8 位 `YYYYMMDD`，实测 2026-10-14 可用）。
+ *
+ * 主路径仍然是从站点的 JS bundle 里解析出来——上游每发一版就把 id 加进那个数组，
+ * 写死清单只是为了「对方改了打包方式」时整条链路不哑掉。
+ */
+export const LIVEBENCH2_FALLBACK_RELEASES = ['20261014'];
 
 export const HTTP = {
   timeoutMs: 60_000,

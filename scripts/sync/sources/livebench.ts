@@ -21,7 +21,7 @@
  */
 import { parse as parseCsv } from 'csv-parse/sync';
 
-import { ENDPOINTS, LIVEBENCH_FALLBACK_RELEASES } from '../config';
+import { ENDPOINTS, LIVEBENCH2_FALLBACK_RELEASES, LIVEBENCH_FALLBACK_RELEASES } from '../config';
 import { fetchWithCache } from '../lib/http';
 import { errorMessage, log } from '../lib/log';
 import type { LiveBenchResult, LiveBenchScore } from './types';
@@ -97,6 +97,272 @@ export function parseLiveBenchReleases(pySource: string): string[] {
 }
 
 /**
+ * LiveBench 2.0 的分类 → 赛制 id（2026-10-14 公布的七个分类）。
+ *
+ * **必须和 v1 完全分池**：v1 是「按题集打分的宽表」，2.0 换成了「长程任务产物评审」
+ * （跑几个月的运维、做 PPT/PDF、写研究报告）。这不是同一把尺子，分数也不在同一个量级，
+ * 混进同一个 league 会让排行榜上的名次取决于模型碰巧在哪个版本被测过。
+ * 所以 id 一律加 `2_` 前缀，v1 的 `livebench_coding` 保持原样、互不相干。
+ *
+ * `coding` 决定进不进 `coding[]`：只有 Coding 这类是按「会不会写代码」量的，
+ * 其余六类进 `scores[]` 当独立榜单。Research/Design 塞进编程档位会让
+ * 「编程能力」这一行突然变成文档排版分，这是必须避免的。
+ */
+const V2_CATEGORY_LEAGUES: Array<{
+  category: string;
+  league: string;
+  coding: boolean;
+  note: string;
+}> = [
+  {
+    category: 'Coding',
+    league: 'livebench2_coding',
+    coding: true,
+    note: 'LLM API 对接 / Agent 循环 / 计费与限额 / 云基础设施 / 产品交互 / 记忆与工具，六项均分',
+  },
+  {
+    category: 'Long Agentic',
+    league: 'livebench2_long_agentic',
+    coding: false,
+    note: '财务合规、运营与电商、长跑运维、系统工程、性能调优五类长程任务',
+  },
+  {
+    category: 'Reasoning',
+    league: 'livebench2_reasoning',
+    coding: false,
+    note: '心理理论、斑马谜题、空间推理、带导航的逻辑题',
+  },
+  {
+    category: 'Browser',
+    league: 'livebench2_browser',
+    coding: false,
+    note: '浏览器里的数据汇总、顺序规划、结构一致性、约束遵守',
+  },
+  {
+    category: 'Data Analysis',
+    league: 'livebench2_data_analysis',
+    coding: false,
+    note: '连续事件识别、表连接、表格格式互转',
+  },
+  {
+    category: 'Research',
+    league: 'livebench2_research',
+    coding: false,
+    note: '监管合规、法律、财税、战略、科学证据五类带引用的检索与研判',
+  },
+  {
+    category: 'Design',
+    league: 'livebench2_design',
+    coding: false,
+    note: 'Word 文档、PDF 排版、PPT 幻灯片三类成品的版式与内容组织',
+  },
+];
+
+/**
+ * 上游型号名与本站 slug 的**已知写法差异**。
+ *
+ * LiveBench 2.0 把 NVIDIA 那几款的词序写成「产品线 + 档位 + 代数」
+ * （`nemotron-ultra-3`），我们目录里是「产品线 + 代数 + 档位」（`nemotron-3-ultra-...`）。
+ * 这类差异用通配匹配去猜很危险——`gpt-5.2` 会顺手咬上 `gpt-5.2-pro`，
+ * 而错配的分数比缺分数更糟：它看起来是真的。所以只维护一张**精确别名表**，
+ * 每条都得能指着具体型号说清楚，匹配不上就如实计进未命中（那本身也是有用的信号）。
+ *
+ * 不收录 `beam-1.0`：我们目录里只有 Reflection 家的 `reflection-beam-1-0-501b-a23b`，
+ * 是另一个型号，不该硬凑。
+ */
+const V2_NAME_ALIASES: Record<string, string> = {
+  // Nemotron 3.5 Lightning 30B A3B —— 我们库里唯一的 lightning。
+  'nemotron-lightning-3.5': 'nemotron-3.5-lightning',
+  // Nemotron 3.5 Super VL —— 指向不带参数量后缀的基座条目。
+  'nemotron-super-vl-3.5': 'nemotron-3.5-super-vl',
+  // Nemotron 3 Ultra —— 3 代 Ultra 在我们库里只有 550B-A55B 这一条（老的是 llama-3.1-nemotron-ultra-253b，不同代）。
+  'nemotron-ultra-3': 'nemotron-3-ultra-550b-a55b',
+};
+
+/**
+ * 七类均分。**上游不发布这个数**，是我们按七个分类各等权算出来的，
+ * 所以只在本站标为「综合」并在说明里写明口径；缺任何一类就不算——
+ * 分母不同还叫同一个名字，等于给自己造了一个不可比的数字。
+ */
+export const V2_OVERALL_LEAGUE = 'livebench2_overall';
+
+/**
+ * 从站点 JS bundle 里抽 LiveBench 2.0 的 release id。
+ *
+ * v1 的清单在 Python 常量里（`LIVE_BENCH_RELEASES`），2.0 之后那段代码还在、日期却停在
+ * 2026-06-25，真正在用的是前端 bundle 里一个 8 位日期数组（`["20261014"]`）。
+ * 只认「数组里全是 8 位数字、且落在合理年份区间」的形状：这是自校验的一部分，
+ * 抽错了下一步拉 breakdown.json 会直接 404，不会把垃圾写进快照。
+ */
+export function parseLiveBenchV2Releases(js: string): string[] {
+  const out = new Set<string>();
+  for (const hit of js.matchAll(/\[\s*((?:"\d{8}"\s*,?\s*)+)\]/g)) {
+    for (const d of hit[1].matchAll(/"(\d{8})"/g)) {
+      const id = d[1];
+      const year = Number(id.slice(0, 4));
+      if (year >= 2024 && year <= 2035) out.add(id);
+    }
+  }
+  return [...out].sort().reverse();
+}
+
+/** 一个分项的分数集合取算术平均。上游给的是 0–100 的百分数，缺项按「没跑」跳过。 */
+function meanParts(scores: Record<string, unknown>): number | null {
+  const vals: number[] = [];
+  for (const raw of Object.values(scores)) {
+    const n = typeof raw === 'number' ? raw : Number(raw);
+    if (!Number.isFinite(n)) continue;
+    vals.push(n);
+  }
+  if (vals.length === 0) return null;
+  return Math.round((vals.reduce((a, b) => a + b, 0) / vals.length) * 100) / 100;
+}
+
+/**
+ * 解析 `data/<release>/breakdown.json`。
+ * 结构是 `{ "<分类>": { parts: [...], models: { "<型号>": { scores: { "<分项>": 87.5 } } } } }`，
+ * 一个文件装下全部七类。返回 型号 → 分类 → 分数。
+ */
+export function parseV2Breakdown(payload: unknown): Map<string, Map<string, number>> {
+  const out = new Map<string, Map<string, number>>();
+  if (!payload || typeof payload !== 'object') return out;
+  const root = payload as Record<string, unknown>;
+  for (const { category } of V2_CATEGORY_LEAGUES) {
+    const block = root[category];
+    if (!block || typeof block !== 'object') continue;
+    const models = (block as { models?: unknown }).models;
+    if (!models || typeof models !== 'object') continue;
+    for (const [name, entry] of Object.entries(models as Record<string, unknown>)) {
+      if (!name.trim() || !entry || typeof entry !== 'object') continue;
+      const scores = (entry as { scores?: unknown }).scores;
+      if (!scores || typeof scores !== 'object') continue;
+      const score = meanParts(scores as Record<string, unknown>);
+      if (score === null) continue;
+      const cats = out.get(name) ?? new Map<string, number>();
+      cats.set(category, score);
+      out.set(name, cats);
+    }
+  }
+  return out;
+}
+
+/** 在站点首页里找打包后的主 bundle。CRA 产物固定是 `static/js/main.<hash>.js`。 */
+function pickMainBundle(html: string): string | null {
+  const srcs = [...html.matchAll(/<script[^>]+src="([^"]+)"/gi)].map((m) => m[1]);
+  return srcs.find((s) => /main\.[^/]+\.js(\?|$)/.test(s)) ?? srcs[0] ?? null;
+}
+
+/**
+ * 发现 v2 的 release 清单：首页 → 主 bundle → 抽 8 位日期数组。
+ * 任何一步失败都回落到内置清单，让「对方改了打包方式」不至于让整条源哑掉。
+ */
+async function discoverV2Releases(): Promise<{ releases: string[]; source: string }> {
+  try {
+    const index = await fetchWithCache(ENDPOINTS.liveBenchIndex, {
+      label: 'livebench/index.html',
+    });
+    const href = pickMainBundle(index.body.toString('utf8'));
+    if (href) {
+      const url = new URL(href, ENDPOINTS.liveBenchIndex).href;
+      const bundle = await fetchWithCache(url, { label: 'livebench/main.js' });
+      const parsed = parseLiveBenchV2Releases(bundle.body.toString('utf8'));
+      if (parsed.length > 0) return { releases: parsed, source: 'bundle' };
+    }
+  } catch (err) {
+    log.warn(`LiveBench 2.0 release 清单解析失败，用内置兜底：${errorMessage(err)}`);
+  }
+  return { releases: [...LIVEBENCH2_FALLBACK_RELEASES], source: 'fallback' };
+}
+
+/**
+ * 抓一个 v2 release。**按发布日期降序取第一个能用的**：2.0 的每个 release 都是
+ * 全部 49 个模型的完整快照，不像 v1 那样只重跑一部分，所以不需要跨 release 取并集。
+ */
+async function fetchV2Release(release: string): Promise<Map<string, Map<string, number>> | null> {
+  try {
+    const res = await fetchWithCache(ENDPOINTS.liveBenchV2Breakdown(release), {
+      label: `livebench/v2/${release}/breakdown.json`,
+    });
+    const parsed = parseV2Breakdown(JSON.parse(res.body.toString('utf8')));
+    return parsed.size > 0 ? parsed : null;
+  } catch (err) {
+    log.warn(`LiveBench 2.0 ${release} 抓取失败：${errorMessage(err)}`);
+    return null;
+  }
+}
+
+/** LiveBench 2.0 的落地路径。七类全部按分类入库，另有一条本站算的七类均分。 */
+async function fetchLiveBenchV2(fetchedAt: string): Promise<LiveBenchResult | null> {
+  const { releases, source } = await discoverV2Releases();
+  for (const release of releases) {
+    const payload = await fetchV2Release(release);
+    if (!payload) continue;
+
+    const byModel = new Map<string, LiveBenchScore[]>();
+    const counts: Record<string, number> = {};
+    for (const [name, cats] of payload) {
+      const slug = V2_NAME_ALIASES[name] ?? stripLiveBenchEffort(name);
+      if (!slug) continue;
+      const list = byModel.get(slug) ?? [];
+      for (const { category, league, coding } of V2_CATEGORY_LEAGUES) {
+        const score = cats.get(category);
+        if (score === undefined) continue;
+        list.push({
+          league,
+          score,
+          release,
+          upstreamModel: name,
+          sourceUrl: `${ENDPOINTS.liveBenchIndex}?release=${release}`,
+          coding,
+        });
+        counts[league] = (counts[league] ?? 0) + 1;
+      }
+      if (cats.size === V2_CATEGORY_LEAGUES.length) {
+        const all = [...cats.values()];
+        list.push({
+          league: V2_OVERALL_LEAGUE,
+          score: Math.round((all.reduce((a, b) => a + b, 0) / all.length) * 100) / 100,
+          release,
+          upstreamModel: name,
+          sourceUrl: `${ENDPOINTS.liveBenchIndex}?release=${release}`,
+          coding: false,
+        });
+        counts[V2_OVERALL_LEAGUE] = (counts[V2_OVERALL_LEAGUE] ?? 0) + 1;
+      }
+      byModel.set(slug, list);
+    }
+
+    log.step(
+      `LiveBench 2.0：release ${release}（清单来自 ${source}），` +
+        `七类共 ${byModel.size} 个型号，` +
+        Object.entries(counts)
+          .map(([k, v]) => `${k} ${v}`)
+          .join(' · '),
+    );
+
+    return {
+      status: {
+        ok: true,
+        fetchedAt,
+        note:
+          'LiveBench 2.0（2026-10 起）。上游整站重写，v1 的 table_<release>.csv / categories_<release>.json 已全部下线（404），' +
+          '数据改从 data/<release>/breakdown.json 取。2.0 是长程任务评测（跑几个月的运维、做 PPT/PDF、写研究报告），' +
+          '与 v1 的题目集不是同一把尺子，**两条赛制的分数不可比较**，故赛制 id 一律 `livebench2_` 前缀另起一池。' +
+          `release ${release} 是完整快照（七个分类每个都有全部型号），不需要像 v1 那样跨 release 取并集。` +
+          `\`${V2_OVERALL_LEAGUE}\` 是本站按七类等权算的均分，上游不发布这个数。`,
+      },
+      byModel,
+      counts,
+      releasesUsed: [release],
+      releasesSkipped: [],
+      releaseSource: `v2/${source}`,
+      v2Release: release,
+    };
+  }
+  return null;
+}
+
+/**
  * 分组平均。缺任何一个 task 就返回 null——半个分组的平均没有意义。
  *
  * **空串必须单独判掉**：`Number('')` 是 `0` 而且 `Number.isFinite(0)` 为真，
@@ -157,7 +423,14 @@ async function fetchRelease(release: string): Promise<ReleasePayload | null> {
   }
 }
 
-export async function fetchLiveBench(fetchedAt: string): Promise<LiveBenchResult> {
+/**
+ * LiveBench 1.x 的老路径（按题集的宽表 CSV）。
+ *
+ * 2026-10 上游整站重写成 LiveBench 2.0 之后，这条路径的端点已全部 404。
+ * 保留它不是为了继续用，而是为了**上游回滚**时还能立刻接回去——这套分组平均与同期分池
+ * 的逻辑是踩过坑换来的，删了将来重写一遍很容易再踩一遍。
+ */
+export async function fetchLiveBenchV1(fetchedAt: string): Promise<LiveBenchResult> {
   const byModel = new Map<string, LiveBenchScore[]>();
   const counts: Record<string, number> = {};
   const skippedReleases: string[] = [];
@@ -203,6 +476,7 @@ export async function fetchLiveBench(fetchedAt: string): Promise<LiveBenchResult
       releasesUsed: [],
       releasesSkipped: skippedReleases,
       releaseSource,
+      v2Release: null,
     };
   }
 
@@ -233,6 +507,8 @@ export async function fetchLiveBench(fetchedAt: string): Promise<LiveBenchResult
           release: p.release,
           upstreamModel: model,
           sourceUrl: `https://livebench.ai/#/?release=${p.release}`,
+          // v1 只有 Coding / Agentic Coding 两组，都是编程口径。
+          coding: true,
         });
         byModel.set(slug, list);
         counts[league] = (counts[league] ?? 0) + 1;
@@ -265,5 +541,20 @@ export async function fetchLiveBench(fetchedAt: string): Promise<LiveBenchResult
     releasesUsed,
     releasesSkipped: skippedReleases,
     releaseSource,
+    v2Release: null,
   };
+}
+
+/**
+ * LiveBench 的总入口。
+ *
+ * 顺序是「先 2.0、后 1.x」：2.0 是上游现在的样子，1.x 的端点已下线；
+ * 只有当 2.0 完全抓不到（上游再改版，或者干脆回滚回 1.x）才回落到老路径。
+ * 两条路径的成绩**永远不混池**——它们的赛制 id 不一样，分数也不在同一把尺子上。
+ */
+export async function fetchLiveBench(fetchedAt: string): Promise<LiveBenchResult> {
+  const v2 = await fetchLiveBenchV2(fetchedAt);
+  if (v2) return v2;
+  log.warn('LiveBench 2.0 没抓到数据，回落到 1.x（上游已下线 1.x 的端点，通常同样拿不到）');
+  return fetchLiveBenchV1(fetchedAt);
 }

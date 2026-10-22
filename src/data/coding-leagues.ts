@@ -196,6 +196,13 @@ export const CODING_LEAGUES: Record<string, CodingLeague> = {
     priority: 35,
     homepage: 'https://livebench.ai/',
   },
+  livebench2_coding: {
+    label: 'LiveBench 2.0 编程',
+    blurb: 'LiveBench 2.0 的编程分项：不是做题，而是接 API、写 Agent 循环、接云基础设施、做计费与限额这类真活儿。2.0 换了评测方式（长程任务、产物评审），与旧版 LiveBench 编程分不是同一把尺子，分数不可直接比较。',
+    unit: 'pct',
+    priority: 45,
+    homepage: 'https://livebench.ai/',
+  },
   livecodebench: {
     label: 'LiveCodeBench',
     blurb: '持续收录新出的编程竞赛题，题目发布时间晚于模型训练截止日期，用来避开「背过答案」的嫌疑。',
