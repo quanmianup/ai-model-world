@@ -651,7 +651,7 @@
     {
       "id": "livebench_agentic_coding",
       "inEci": false,
-      "models": 114,
+      "models": 1,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -663,7 +663,7 @@
     {
       "id": "livebench_coding",
       "inEci": false,
-      "models": 134,
+      "models": 3,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -1261,7 +1261,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-10-22T01:53:33.342Z",
+  "generatedAt": "2026-10-22T08:32:12.800Z",
   "models": [
     {
       "benchmarks": {
@@ -3690,16 +3690,7 @@
         "structuredOutput": null,
         "toolCall": null
       },
-      "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 58.16,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        }
-      ],
+      "coding": [],
       "contextWindow": 40960,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "alibaba/qwen3-14b",
@@ -3731,7 +3722,6 @@
         "benchmarks.eci": "epoch.ai",
         "benchmarks.gpqa_diamond": "epoch.ai",
         "capabilities.promptCaching": "derived",
-        "coding": "derived",
         "contextWindow": "openrouter",
         "maxOutput": "openrouter",
         "modalities": "openrouter",
@@ -3791,14 +3781,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 58.16,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 18.19,
           "source": "epoch.ai",
@@ -3843,22 +3825,6 @@
           "score": 59.6,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 67.5,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 1.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
           "unit": "pct"
         }
       ],
@@ -4014,22 +3980,6 @@
           "score": 83,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 1.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 67.5,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
           "unit": "pct"
         },
         {
@@ -4364,22 +4314,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.61,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 13.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
         }
       ],
       "contextWindow": 262144,
@@ -4533,22 +4467,6 @@
           "score": 83,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 13.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.61,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -4886,22 +4804,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/",
           "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.97,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 6.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
         }
       ],
       "contextWindow": 262144,
@@ -5059,22 +4961,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 6.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.97,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 29.31,
           "source": "epoch.ai",
@@ -5152,24 +5038,7 @@
         "structuredOutput": null,
         "toolCall": true
       },
-      "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 48.88,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 1.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "coding": [],
       "contextWindow": 131072,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "alibaba/qwen3-30b-a3b",
@@ -5203,7 +5072,6 @@
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
-        "coding": "derived",
         "contextWindow": "models.dev",
         "license": "huggingface",
         "maxOutput": "models.dev",
@@ -5271,22 +5139,6 @@
           "score": 75.3,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 1.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 48.88,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -5624,22 +5476,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
           "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 66.03,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 3.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
         }
       ],
       "contextWindow": 131072,
@@ -5742,22 +5578,6 @@
           "score": 65.72,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 3.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 66.03,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -6178,22 +5998,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 74.98,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 31.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "gso",
           "score": 3.92,
           "source": "epoch.ai",
@@ -6301,22 +6105,6 @@
           "score": 3.92,
           "source": "epoch.ai",
           "sourceUrl": "https://gso-bench.github.io/leaderboard.html",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 31.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 74.98,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
           "unit": "pct"
         },
         {
@@ -6663,22 +6451,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.79,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 31.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 370.45,
           "source": "epoch.ai",
@@ -6796,22 +6568,6 @@
           "score": 72.6,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 31.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.79,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
           "unit": "pct"
         },
         {
@@ -7242,24 +6998,7 @@
         "structuredOutput": null,
         "toolCall": true
       },
-      "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.2,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 10,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "coding": [],
       "contextWindow": 262144,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "alibaba/qwen3-next-80b-a3b-instruct",
@@ -7290,7 +7029,6 @@
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
-        "coding": "derived",
         "contextWindow": "models.dev",
         "knowledgeCutoff": "models.dev",
         "license": "huggingface",
@@ -7304,30 +7042,12 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
-        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-09-01",
       "releaseDatePrecision": "month",
       "retiredAt": null,
-      "scores": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 10,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.2,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "scores": [],
       "slug": "alibaba-qwen3-next-80b-a3b-instruct",
       "trainingComputeFlop": null,
       "vendorId": "alibaba"
@@ -10548,22 +10268,6 @@
           "source": "models.dev",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-27B",
           "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.79,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 39.29,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
         }
       ],
       "contextWindow": 262144,
@@ -10668,22 +10372,6 @@
           "score": 85.86,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 39.29,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.79,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -10947,22 +10635,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 64.94,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 46.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 326.4,
           "source": "epoch.ai",
@@ -11096,22 +10768,6 @@
           "score": 83.33,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 46.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 64.94,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -11382,22 +11038,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.18,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 41.36,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 670.15,
           "source": "epoch.ai",
@@ -11558,22 +11198,6 @@
           "score": 88.38,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 41.36,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.18,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -11808,22 +11432,6 @@
           "unit": "pct"
         },
         {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 74.22,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 43.59,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
           "attribution": "vendor-self-reported",
           "league": "nl2repo",
           "score": 47.2,
@@ -11992,22 +11600,6 @@
           "score": 90.91,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 43.59,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 74.22,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -12404,22 +11996,6 @@
           "unit": "pct"
         },
         {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 75.69,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 61.36,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
           "attribution": "vendor-self-reported",
           "league": "nl2repo",
           "score": 42.3,
@@ -12555,22 +12131,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 61.36,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 75.69,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
         },
         {
           "attribution": "vendor-self-reported",
@@ -12759,22 +12319,6 @@
           "unit": "pct"
         },
         {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.55,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 61.62,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
           "attribution": "vendor-self-reported",
           "league": "nl2repo",
           "score": 48.1,
@@ -12850,22 +12394,6 @@
           "score": 58.7,
           "source": "models.dev",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 61.62,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.55,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -12946,22 +12474,6 @@
           "score": 57.46,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.87,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 64.65,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -13150,22 +12662,6 @@
           "score": 92.68,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 64.65,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.87,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -13954,14 +13450,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
           "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 61.36,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
         }
       ],
       "contextWindow": 131072,
@@ -14048,14 +13536,6 @@
           "score": 65.34,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 61.36,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         }
       ],
@@ -15062,14 +14542,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
           "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 53.17,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
         }
       ],
       "contextWindow": 200000,
@@ -15218,14 +14690,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 53.17,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "math_level_5",
           "score": 46.36,
           "source": "epoch.ai",
@@ -15278,14 +14742,6 @@
           "score": 51.6,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.9,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         }
       ],
@@ -15461,14 +14917,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.9,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "math_level_5",
           "score": 56.95,
           "source": "epoch.ai",
@@ -15569,22 +15017,6 @@
           "score": 64.9,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 33.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
           "unit": "pct"
         },
         {
@@ -15783,22 +15215,6 @@
           "score": 81.1,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 33.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
           "unit": "pct"
         },
         {
@@ -16255,22 +15671,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 85.99,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 62.17,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "frontier_code",
           "score": 53.48,
           "source": "epoch.ai",
@@ -16565,22 +15965,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 62.17,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 85.99,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 61.15,
           "source": "epoch.ai",
@@ -16737,22 +16121,6 @@
           "score": 55.8,
           "source": "models.dev",
           "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 86.38,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 66.06,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -17028,22 +16396,6 @@
           "score": 46.5,
           "source": "epoch.ai",
           "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 66.06,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 86.38,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -17501,22 +16853,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.17,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 33.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 653.48,
           "source": "epoch.ai",
@@ -17721,22 +17057,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 33.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.17,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 30.94,
           "source": "epoch.ai",
@@ -17821,22 +17141,6 @@
           "score": 39.2,
           "source": "models.dev",
           "sourceUrl": "https://www.anthropic.com/claude-haiku-5-5",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.39,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 51.36,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -18056,22 +17360,6 @@
           "score": 30.12,
           "source": "epoch.ai",
           "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 51.36,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.39,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -20110,22 +19398,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 79.65,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 39.7,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "gso",
           "score": 24.5,
           "source": "epoch.ai",
@@ -20420,22 +19692,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 39.7,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 79.65,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 44.46,
           "source": "epoch.ai",
@@ -20608,22 +19864,6 @@
           "score": 79.8,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.18,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 48.99,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -20962,22 +20202,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 48.99,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.18,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 55.76,
           "source": "epoch.ai",
@@ -21158,22 +20382,6 @@
           "score": 66.1,
           "source": "models.dev",
           "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-8",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 82.09,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 50.66,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -21480,22 +20688,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 50.66,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 82.09,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 52.2,
           "source": "epoch.ai",
@@ -21676,22 +20868,6 @@
           "score": 58.97,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 81.83,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 50.51,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -21990,22 +21166,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 50.51,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 81.83,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 57.51,
           "source": "epoch.ai",
@@ -22249,22 +21409,6 @@
           "score": 73.65,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 81.45,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 65.2,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -22563,22 +21707,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 65.2,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 81.45,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 64.45,
           "source": "epoch.ai",
@@ -22727,22 +21855,6 @@
           "score": 66.4,
           "source": "models.dev",
           "sourceUrl": "https://www.anthropic.com/claude-opus-5-5",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 89.25,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 71.72,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -23003,22 +22115,6 @@
           "score": 90.59,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 71.72,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 89.25,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -24450,22 +23546,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 48.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "gso",
           "score": 12.74,
           "source": "epoch.ai",
@@ -24735,22 +23815,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 48.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 38.76,
           "source": "epoch.ai",
@@ -24923,22 +23987,6 @@
           "score": 29.93,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 79.27,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 42.63,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -25204,22 +24252,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 42.63,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 79.27,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 46.51,
           "source": "epoch.ai",
@@ -25400,22 +24432,6 @@
           "score": 53.85,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 80.68,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 59.39,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -25657,22 +24673,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 59.39,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 80.68,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 50.02,
           "source": "epoch.ai",
@@ -25805,22 +24805,6 @@
           "score": 70.6,
           "source": "models.dev",
           "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 91.37,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 56.31,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -26048,22 +25032,6 @@
           "score": 46.12,
           "source": "epoch.ai",
           "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 56.31,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 91.37,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -32094,14 +31062,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 804.12,
           "source": "epoch.ai",
@@ -32280,14 +31240,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "math_level_5",
           "score": 93.05,
           "source": "epoch.ai",
@@ -32348,22 +31300,6 @@
           "score": 71.4,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.19,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 20,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
           "unit": "pct"
         },
         {
@@ -32541,22 +31477,6 @@
           "score": 81.9,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 20,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.19,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
           "unit": "pct"
         },
         {
@@ -32797,16 +31717,7 @@
         "structuredOutput": null,
         "toolCall": false
       },
-      "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 47.03,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        }
-      ],
+      "coding": [],
       "contextWindow": 131072,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "deepseek/deepseek-r1-distill-qwen-32b",
@@ -32839,7 +31750,6 @@
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
-        "coding": "derived",
         "contextWindow": "models.dev",
         "license": "huggingface",
         "maxOutput": "models.dev",
@@ -32880,14 +31790,6 @@
           "score": 64.14,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 47.03,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         }
       ],
@@ -33039,14 +31941,6 @@
           "score": 48.4,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.91,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         },
         {
@@ -33249,14 +32143,6 @@
           "score": 77,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.91,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         },
         {
@@ -34081,22 +32967,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.61,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 25,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 745.17,
           "source": "epoch.ai",
@@ -34178,22 +33048,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 25,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.61,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 28.58,
           "source": "epoch.ai",
@@ -34238,22 +33092,6 @@
           "score": 74.2,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 75.69,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 46.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -34461,22 +33299,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 46.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 75.69,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 28.82,
           "source": "epoch.ai",
@@ -34617,22 +33439,6 @@
           "score": 74.2,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.19,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 36.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -34832,22 +33638,6 @@
           "score": 77,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 36.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.19,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -35356,22 +34146,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.23,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 37.63,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "frontier_code",
           "score": 18.8,
           "source": "epoch.ai",
@@ -35556,22 +34330,6 @@
           "score": 91.04,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 37.63,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.23,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -35969,22 +34727,6 @@
           "unit": "pct"
         },
         {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 74.98,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 46.77,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
           "attribution": "vendor-self-reported",
           "league": "nl2repo",
           "score": 54.2,
@@ -36180,22 +34922,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 46.77,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 74.98,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 41.73,
           "source": "epoch.ai",
@@ -36307,22 +35033,6 @@
           "unit": "pct"
         },
         {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.2,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 65.1,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
           "attribution": "vendor-self-reported",
           "league": "nl2repo",
           "score": 57.7,
@@ -36388,22 +35098,6 @@
           "score": 59.3,
           "source": "models.dev",
           "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 65.1,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.2,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -36484,22 +35178,6 @@
           "score": 76.2,
           "source": "models.dev",
           "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.99,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 42.63,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -36705,22 +35383,6 @@
           "score": 90.91,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 42.63,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.99,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -37181,22 +35843,6 @@
           "unit": "pct"
         },
         {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.16,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 54.95,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
           "attribution": "vendor-self-reported",
           "league": "nl2repo",
           "score": 61.5,
@@ -37404,22 +36050,6 @@
           "score": 91.67,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 54.95,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.16,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -39146,22 +37776,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 66.03,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 16.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 661.88,
           "source": "epoch.ai",
@@ -39351,22 +37965,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 16.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 66.03,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 27.49,
           "source": "epoch.ai",
@@ -39440,7 +38038,7 @@
       },
       "capabilities": {
         "promptCaching": true,
-        "reasoning": true,
+        "reasoning": false,
         "structuredOutput": null,
         "toolCall": false
       },
@@ -39538,22 +38136,6 @@
         "toolCall": true
       },
       "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 66.41,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 5,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
         {
           "attribution": "third-party",
           "league": "ale_bench",
@@ -39655,22 +38237,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 5,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 66.41,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 18.07,
           "source": "epoch.ai",
@@ -39709,22 +38275,6 @@
         "toolCall": true
       },
       "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 65.39,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 1.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
         {
           "attribution": "third-party",
           "league": "ale_bench",
@@ -39822,22 +38372,6 @@
           "score": 21.9,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 1.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 65.39,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -39981,22 +38515,6 @@
           "score": 55.1,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 67.5,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 23.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -40190,22 +38708,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 23.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 67.5,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 27.49,
           "source": "epoch.ai",
@@ -40378,22 +38880,6 @@
           "score": 83.1,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 75.69,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 33.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -40694,22 +39180,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 33.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 75.69,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 34.77,
           "source": "epoch.ai",
@@ -40858,14 +39328,6 @@
           "score": 83.1,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.08,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         },
         {
@@ -41161,14 +39623,6 @@
           "score": 80.9,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.08,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         },
         {
@@ -42219,22 +40673,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.9,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 40,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "swe_atlas_codebase_qna",
           "score": 8.2,
           "source": "models.dev",
@@ -42487,22 +40925,6 @@
           "score": 7.84,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 40,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.9,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -42861,22 +41283,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 74.6,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 55,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "gso",
           "score": 17.65,
           "source": "epoch.ai",
@@ -43121,22 +41527,6 @@
           "score": 37.52,
           "source": "epoch.ai",
           "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 55,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 74.6,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -43740,22 +42130,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.52,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 33.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 797.73,
           "source": "epoch.ai",
@@ -43909,22 +42283,6 @@
           "score": 8.64,
           "source": "epoch.ai",
           "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 33.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.52,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -44153,22 +42511,6 @@
           "score": 11.73,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.45,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 44.14,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -44532,22 +42874,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 44.14,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.45,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 53.82,
           "source": "epoch.ai",
@@ -44846,22 +43172,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.18,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 48.99,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 911.02,
           "source": "epoch.ai",
@@ -45102,22 +43412,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 48.99,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.18,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 47.15,
           "source": "epoch.ai",
@@ -45250,22 +43544,6 @@
           "score": 54,
           "source": "models.dev",
           "sourceUrl": "https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 45.25,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -45449,22 +43727,6 @@
           "score": 83.33,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 45.25,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -45717,22 +43979,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.86,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 43.43,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "frontier_code",
           "score": 34.37,
           "source": "epoch.ai",
@@ -45964,22 +44210,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 43.43,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.86,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 44.93,
           "source": "epoch.ai",
@@ -46088,22 +44318,6 @@
           "score": 65.49,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.89,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 58.28,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -46322,22 +44536,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 58.28,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.89,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 50.38,
           "source": "epoch.ai",
@@ -46430,22 +44628,6 @@
           "score": 73.83,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.49,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 54.24,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -46699,22 +44881,6 @@
           "score": 44.52,
           "source": "epoch.ai",
           "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 54.24,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.49,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -48166,14 +46332,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
           "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 48.94,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
         }
       ],
       "contextWindow": 131072,
@@ -48294,14 +46452,6 @@
           "score": 79.9,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 48.94,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         },
         {
@@ -48715,7 +46865,7 @@
         "totalB": 25.81
       },
       "pricing": {
-        "cachedInputPerMTok": 0.049,
+        "cachedInputPerMTok": 0.05,
         "inputPerMTok": 0.1,
         "outputPerMTok": 0.34
       },
@@ -48846,22 +46996,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 60.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 40,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 925.5,
           "source": "epoch.ai",
@@ -48987,22 +47121,6 @@
           "score": 75.76,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 40,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 60.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -51407,7 +49525,7 @@
       "capabilities": {
         "promptCaching": false,
         "reasoning": false,
-        "structuredOutput": false,
+        "structuredOutput": null,
         "toolCall": false
       },
       "coding": [],
@@ -51441,7 +49559,6 @@
       "provenance": {
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
-        "capabilities.structuredOutput": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
         "license": "huggingface",
@@ -54391,22 +52508,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.16,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 58.54,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "webdev_arena_elo",
           "score": 1541.55,
           "source": "epoch.ai",
@@ -54537,22 +52638,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 58.54,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.16,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 49.91,
           "source": "epoch.ai",
@@ -54653,22 +52738,6 @@
           "score": 54.87,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.54,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 57.58,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -54799,22 +52868,6 @@
           "score": 11.97,
           "source": "epoch.ai",
           "sourceUrl": "https://www.frontierswe.com/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 57.58,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.54,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -54991,22 +53044,6 @@
           "score": 75.4,
           "source": "models.dev",
           "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 81.06,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 64.09,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -55194,22 +53231,6 @@
           "score": 74.39,
           "source": "epoch.ai",
           "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 64.09,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 81.06,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -57127,22 +55148,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 57.78,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 21.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "webdev_arena_elo",
           "score": 1297.78,
           "source": "epoch.ai",
@@ -57201,22 +55206,6 @@
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 21.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 57.78,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
         {
           "attribution": "vendor-self-reported",
           "league": "swe_bench_vendor",
@@ -57589,22 +55578,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 70.7,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 51.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "swe_atlas_codebase_qna",
           "score": 10.3,
           "source": "models.dev",
@@ -57744,22 +55717,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 51.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 70.7,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
         },
         {
           "attribution": "third-party",
@@ -57953,22 +55910,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 54.9,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 50,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 599.25,
           "source": "epoch.ai",
@@ -58075,22 +56016,6 @@
           "score": 0,
           "source": "epoch.ai",
           "sourceUrl": "https://gbaeval.com/model/goose-minimax-m2-7",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 50,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 54.9,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -58289,22 +56214,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.2,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 40.66,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "frontier_code",
           "score": 14.7,
           "source": "epoch.ai",
@@ -58471,22 +56380,6 @@
           "score": 90.91,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 40.66,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.2,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -59311,24 +57204,7 @@
         "structuredOutput": null,
         "toolCall": true
       },
-      "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 66.79,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 43.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "coding": [],
       "contextWindow": 262144,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "mistral/devstral-2512",
@@ -59359,7 +57235,6 @@
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
-        "coding": "derived",
         "contextWindow": "models.dev",
         "knowledgeCutoff": "models.dev",
         "maxOutput": "models.dev",
@@ -59372,30 +57247,12 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
-        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-12-09",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 43.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 66.79,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "scores": [],
       "slug": "mistral-devstral-2512",
       "trainingComputeFlop": null,
       "vendorId": "mistral"
@@ -61658,14 +59515,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 62.89,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 264.7,
           "source": "epoch.ai",
@@ -61796,14 +59645,6 @@
           "score": 69,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 62.89,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         },
         {
@@ -62186,22 +60027,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.16,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 57.17,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "frontier_code",
           "score": 39.43,
           "source": "epoch.ai",
@@ -62308,22 +60133,6 @@
           "score": 39.43,
           "source": "epoch.ai",
           "sourceUrl": "https://cognition.com/frontiercode",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 57.17,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.16,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -63018,22 +60827,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 63.98,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 10,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "frontier_code",
           "score": 8,
           "source": "epoch.ai",
@@ -63191,22 +60984,6 @@
           "score": 77.3,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 10,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 63.98,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
           "unit": "pct"
         },
         {
@@ -64306,14 +62083,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 49.65,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 497.62,
           "source": "epoch.ai",
@@ -64411,14 +62180,6 @@
           "score": 47.47,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 49.65,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         },
         {
@@ -66117,22 +63878,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 67.44,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 38.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "gso",
           "score": 1.96,
           "source": "epoch.ai",
@@ -66269,22 +64014,6 @@
           "score": 85.6,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 38.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 67.44,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -66575,22 +64304,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 74.28,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 31.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "gso",
           "score": 1.96,
           "source": "epoch.ai",
@@ -66729,22 +64442,6 @@
           "score": 85.6,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 31.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 74.28,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -67171,22 +64868,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.86,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 48.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "swe_atlas_codebase_qna",
           "score": 13.1,
           "source": "models.dev",
@@ -67375,22 +65056,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 48.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.86,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "os_world",
           "score": 63.3,
           "source": "epoch.ai",
@@ -67523,22 +65188,6 @@
           "score": 80.2,
           "source": "models.dev",
           "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.6",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.57,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 46.92,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -67754,22 +65403,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 46.92,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.57,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 37.26,
           "source": "epoch.ai",
@@ -67878,22 +65511,6 @@
           "score": 30.53,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.96,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 45.66,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -68079,22 +65696,6 @@
           "score": 87.88,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 45.66,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.96,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -68338,22 +65939,6 @@
           "score": 68.51,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 81.45,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 62.17,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -68611,22 +66196,6 @@
           "score": 93.12,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 62.17,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 81.45,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -70286,14 +67855,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 54.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 213.9,
           "source": "epoch.ai",
@@ -70362,14 +67923,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 54.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "weirdml",
           "score": 38.01,
           "source": "epoch.ai",
@@ -70422,22 +67975,6 @@
           "score": 67.7,
           "source": "models.dev",
           "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 70.7,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 38.74,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -70567,22 +68104,6 @@
           "score": 85.35,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 38.74,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 70.7,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -72867,14 +70388,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.19,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 558.1,
           "source": "epoch.ai",
@@ -73080,14 +70593,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.19,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 25.61,
           "source": "epoch.ai",
@@ -73164,14 +70669,6 @@
           "score": 32.4,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.11,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         }
       ],
@@ -73340,14 +70837,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.11,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 21.12,
           "source": "epoch.ai",
@@ -73416,14 +70905,6 @@
           "score": 8.9,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 63.21,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         }
       ],
@@ -73571,14 +71052,6 @@
           "score": 48.93,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 63.21,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         },
         {
@@ -74693,14 +72166,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
           "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.29,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
         }
       ],
       "contextWindow": 128000,
@@ -74911,14 +72376,6 @@
           "score": 81.8,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.29,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         },
         {
@@ -75323,14 +72780,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
           "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 55.02,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
         }
       ],
       "contextWindow": 128000,
@@ -75493,14 +72942,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 55.02,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 10.37,
           "source": "epoch.ai",
@@ -75633,22 +73074,6 @@
           "score": 88,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 75.05,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 50,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
           "unit": "pct"
         },
         {
@@ -75948,22 +73373,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 50,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 75.05,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 39.99,
           "source": "epoch.ai",
@@ -76120,22 +73529,6 @@
           "score": 88,
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.57,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 11.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
           "unit": "pct"
         },
         {
@@ -76434,22 +73827,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 11.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.57,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 39.99,
           "source": "epoch.ai",
@@ -76583,22 +73960,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.61,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 48.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
         }
       ],
       "contextWindow": 400000,
@@ -76654,22 +74015,6 @@
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 48.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.61,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
         {
           "attribution": "third-party",
           "league": "terminal_bench_2_0",
@@ -76875,22 +74220,6 @@
           "score": 34.83,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 35,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -77115,22 +74444,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 35,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 34.2,
           "source": "epoch.ai",
@@ -77239,22 +74552,6 @@
           "score": 21.8,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 67.38,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 28.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -77430,22 +74727,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 28.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 67.38,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 7.93,
           "source": "epoch.ai",
@@ -77532,22 +74813,6 @@
         "toolCall": true
       },
       "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.11,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 51.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
         {
           "attribution": "third-party",
           "league": "algotune",
@@ -77693,22 +74958,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 51.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.11,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "simplebench",
           "score": 61.6,
           "source": "epoch.ai",
@@ -77761,22 +75010,6 @@
           "score": 47.6,
           "source": "epoch.ai",
           "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.49,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 53.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -78005,22 +75238,6 @@
           "score": 23.68,
           "source": "epoch.ai",
           "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 53.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 72.49,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -78485,22 +75702,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.79,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 53.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 1244.92,
           "source": "epoch.ai",
@@ -78580,22 +75781,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 53.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.79,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "terminal_bench_2_0",
           "score": 57.8,
           "source": "epoch.ai",
@@ -78640,22 +75825,6 @@
           "score": 60.45,
           "source": "epoch.ai",
           "sourceUrl": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 81.38,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 56.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -78730,22 +75899,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 56.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 81.38,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "metr_time_horizons",
           "score": 223.71,
           "source": "epoch.ai",
@@ -78798,22 +75951,6 @@
           "score": 61.57,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.93,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 40,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -78879,22 +76016,6 @@
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 40,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.93,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
         {
           "attribution": "third-party",
           "league": "terminal_bench_2_0",
@@ -79306,22 +76427,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 50.25,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "gso",
           "score": 26.47,
           "source": "epoch.ai",
@@ -79587,22 +76692,6 @@
           "score": 27.8,
           "source": "epoch.ai",
           "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 50.25,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.07,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -80604,22 +77693,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 83.62,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 49.39,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 1299.9,
           "source": "epoch.ai",
@@ -80698,22 +77771,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 49.39,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 83.62,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
         },
         {
           "attribution": "third-party",
@@ -80988,22 +78045,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.18,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 55,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "swe_atlas_codebase_qna",
           "score": 32.6,
           "source": "models.dev",
@@ -81115,22 +78156,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 55,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.18,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
         },
         {
           "attribution": "third-party",
@@ -81341,22 +78366,6 @@
           "score": 51.77,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.54,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 53.84,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -81703,22 +78712,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 53.84,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.54,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 51.97,
           "source": "epoch.ai",
@@ -81970,22 +78963,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.62,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 41.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "frontier_code",
           "score": 27.04,
           "source": "epoch.ai",
@@ -82190,22 +79167,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 41.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.62,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 40.79,
           "source": "epoch.ai",
@@ -82306,22 +79267,6 @@
           "score": 46.3,
           "source": "models.dev",
           "sourceUrl": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 70.84,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 46.77,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -82493,22 +79438,6 @@
           "score": 78.47,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 46.77,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 70.84,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -82820,22 +79749,6 @@
           "score": 67.04,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 82.15,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 53.99,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -83170,22 +80083,6 @@
           "score": 37.25,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 53.99,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 82.15,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -86603,22 +83500,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 80.74,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 56.77,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "frontier_code",
           "score": 50.23,
           "source": "epoch.ai",
@@ -86827,22 +83708,6 @@
           "score": 95.39,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 56.77,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 80.74,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -87687,22 +84552,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 60.21,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 16.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 575.62,
           "source": "epoch.ai",
@@ -87851,22 +84700,6 @@
           "score": 77.1,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 16.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 60.21,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -89353,14 +86186,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 79.98,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 826.17,
           "source": "epoch.ai",
@@ -89608,14 +86433,6 @@
           "score": 75,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 79.98,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         },
         {
@@ -94867,22 +91684,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.02,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 49.39,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "frontier_code",
           "score": 14,
           "source": "epoch.ai",
@@ -95074,22 +91875,6 @@
           "score": 88.26,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 49.39,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.02,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -96446,24 +93231,7 @@
         "structuredOutput": null,
         "toolCall": true
       },
-      "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 58.54,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 8.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        }
-      ],
+      "coding": [],
       "contextWindow": 2000000,
       "firstSeenAt": "2026-10-13T13:54:29.978Z",
       "id": "xai/grok-4-fast-non-reasoning",
@@ -96499,7 +93267,6 @@
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
-        "coding": "derived",
         "contextWindow": "models.dev",
         "maxOutput": "models.dev",
         "modalities": "models.dev",
@@ -96511,30 +93278,12 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
-        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-12-18",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 8.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 58.54,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        }
-      ],
+      "scores": [],
       "slug": "xai-grok-4-fast-non-reasoning",
       "trainingComputeFlop": null,
       "vendorId": "xai"
@@ -96558,22 +93307,6 @@
         "toolCall": true
       },
       "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.97,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 21.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
         {
           "attribution": "third-party",
           "league": "webdev_arena_elo",
@@ -96691,22 +93424,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 21.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.97,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "webdev_arena_elo",
           "score": 1149,
           "source": "epoch.ai",
@@ -96745,22 +93462,6 @@
         "toolCall": true
       },
       "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 54.26,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 10,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
         {
           "attribution": "third-party",
           "league": "ale_bench",
@@ -96845,22 +93546,6 @@
           "score": 87.73,
           "source": "epoch.ai",
           "sourceUrl": "https://conceptualreasoning.ai/dtbench",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 10,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 54.26,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -97152,22 +93837,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 58.54,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 38.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 1150.28,
           "source": "epoch.ai",
@@ -97348,22 +94017,6 @@
           "score": 89.33,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 38.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 58.54,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -98645,22 +95298,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.93,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 18.54,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 944.17,
           "source": "epoch.ai",
@@ -98823,22 +95460,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 18.54,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 69.93,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 38.33,
           "source": "epoch.ai",
@@ -98939,22 +95560,6 @@
           "score": 53.76,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.59,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 56.46,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -99202,22 +95807,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 56.46,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.59,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 45.2,
           "source": "epoch.ai",
@@ -99358,22 +95947,6 @@
           "score": 67.48,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.78,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 57.02,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -99629,22 +96202,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 57.02,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 76.78,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 48.45,
           "source": "epoch.ai",
@@ -99753,22 +96310,6 @@
           "score": 71,
           "source": "models.dev",
           "sourceUrl": "https://x.ai/news/grok-4-7",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.16,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 53.99,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -100001,22 +96542,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 53.99,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 77.16,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 49.38,
           "source": "epoch.ai",
@@ -100102,24 +96627,7 @@
         "structuredOutput": null,
         "toolCall": true
       },
-      "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 65.39,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 45.81,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        }
-      ],
+      "coding": [],
       "contextWindow": 256000,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "xai/grok-build-0.1",
@@ -100154,7 +96662,6 @@
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
-        "coding": "derived",
         "contextWindow": "models.dev",
         "maxOutput": "models.dev",
         "modalities": "models.dev",
@@ -100188,22 +96695,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://gbaeval.com/model/grok",
           "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 45.81,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 65.39,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
         }
       ],
       "slug": "xai-grok-build-0-1",
@@ -100228,24 +96719,7 @@
         "structuredOutput": null,
         "toolCall": true
       },
-      "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 64.44,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 33.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "coding": [],
       "contextWindow": 256000,
       "firstSeenAt": "2026-10-13T13:54:29.978Z",
       "id": "xai/grok-code-fast-1",
@@ -100278,7 +96752,6 @@
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
-        "coding": "derived",
         "contextWindow": "models.dev",
         "maxOutput": "models.dev",
         "modalities": "models.dev",
@@ -100290,30 +96763,12 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
-        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-09-02",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 33.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 64.44,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "scores": [],
       "slug": "xai-grok-code-fast-1",
       "trainingComputeFlop": null,
       "vendorId": "xai"
@@ -101146,24 +97601,7 @@
         "structuredOutput": null,
         "toolCall": true
       },
-      "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.85,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 30,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "coding": [],
       "contextWindow": 1048576,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "xiaomi/mimo-v2-pro",
@@ -101196,7 +97634,6 @@
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
-        "coding": "derived",
         "contextWindow": "models.dev",
         "knowledgeCutoff": "models.dev",
         "maxOutput": "models.dev",
@@ -101209,30 +97646,12 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
-        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-03-18",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 30,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 68.85,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "scores": [],
       "slug": "xiaomi-mimo-v2-pro",
       "trainingComputeFlop": null,
       "vendorId": "xiaomi"
@@ -102225,22 +98644,6 @@
       "coding": [
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 62.13,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 31.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 344.82,
           "source": "epoch.ai",
@@ -102342,22 +98745,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 31.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 62.13,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "weirdml",
           "score": 40.58,
           "source": "epoch.ai",
@@ -102388,22 +98775,6 @@
         "toolCall": true
       },
       "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 60.27,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 16.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
         {
           "attribution": "third-party",
           "league": "gso",
@@ -102479,22 +98850,6 @@
           "score": 8.12,
           "source": "epoch.ai",
           "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 16.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 60.27,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2025-05-30",
           "unit": "pct"
         }
       ],
@@ -102682,22 +99037,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.02,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 35,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 340.82,
           "source": "epoch.ai",
@@ -102801,22 +99140,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 35,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 71.02,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "swe_bench_pro",
           "score": 9.67,
           "source": "models.dev",
@@ -102862,24 +99185,7 @@
         "structuredOutput": null,
         "toolCall": true
       },
-      "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 64.24,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 3.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "coding": [],
       "contextWindow": 128000,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "zhipuai/glm-4.6v",
@@ -102912,7 +99218,6 @@
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
-        "coding": "derived",
         "contextWindow": "models.dev",
         "knowledgeCutoff": "models.dev",
         "license": "huggingface",
@@ -102926,30 +99231,12 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
-        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-12-08",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 3.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 64.24,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "scores": [],
       "slug": "zhipuai-glm-4-6v",
       "trainingComputeFlop": null,
       "vendorId": "zhipuai"
@@ -103056,22 +99343,6 @@
           "score": 33.39,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.13,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 41.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -103226,22 +99497,6 @@
           "score": 83.33,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 41.67,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.13,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -103515,22 +99770,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.64,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 55,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "swe_atlas_codebase_qna",
           "score": 20.5,
           "source": "models.dev",
@@ -103698,22 +99937,6 @@
           "score": 87.82,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 55,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.64,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
           "unit": "pct"
         },
         {
@@ -103902,22 +100125,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 75.37,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 55,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "ale_bench",
           "score": 887.1,
           "source": "epoch.ai",
@@ -104086,22 +100293,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 55,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 75.37,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "proofbench",
           "score": 22.22,
           "source": "epoch.ai",
@@ -104210,22 +100401,6 @@
           "score": 43.78,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 79.65,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 51.77,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -104480,22 +100655,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 51.77,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 79.65,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 45.82,
           "source": "epoch.ai",
@@ -104733,22 +100892,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.95,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 60.91,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "cursorbench",
           "score": 42.6,
           "source": "epoch.ai",
@@ -104971,22 +101114,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 60.91,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.95,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "lmca",
           "score": 55.51,
           "source": "epoch.ai",
@@ -105172,22 +101299,6 @@
           "score": 63.39,
           "source": "epoch.ai",
           "sourceUrl": "https://deepswe.datacurve.ai/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.95,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 56.77,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -105400,22 +101511,6 @@
           "score": 90.15,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 56.77,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 78.95,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
         },
         {
@@ -105691,24 +101786,7 @@
         "structuredOutput": null,
         "toolCall": true
       },
-      "coding": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.9,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 3.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "coding": [],
       "contextWindow": 200000,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "zhipuai/glm-5v-turbo",
@@ -105744,7 +101822,6 @@
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
-        "coding": "derived",
         "contextWindow": "models.dev",
         "maxOutput": "models.dev",
         "modalities": "models.dev",
@@ -105756,30 +101833,12 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
-        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-04-01",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [
-        {
-          "attribution": "third-party",
-          "league": "livebench_agentic_coding",
-          "score": 3.33,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "livebench_coding",
-          "score": 73.9,
-          "source": "livebench",
-          "sourceUrl": "https://livebench.ai/#/?release=2026-01-08",
-          "unit": "pct"
-        }
-      ],
+      "scores": [],
       "slug": "zhipuai-glm-5v-turbo",
       "trainingComputeFlop": null,
       "vendorId": "zhipuai"
@@ -105854,42 +101913,42 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-10-22T01:53:33.342Z",
+      "fetchedAt": "2026-10-22T08:32:12.800Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-10-22T01:53:33.342Z",
+      "fetchedAt": "2026-10-22T08:32:12.800Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 418 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-10-22T01:53:33.342Z",
+      "fetchedAt": "2026-10-22T08:32:12.800Z",
       "note": "请求 239 个开源模型，成功 235，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-10-22T01:53:33.342Z",
+      "fetchedAt": "2026-10-22T08:32:12.800Z",
       "note": "4244 条（对话类 3247 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-10-22T01:53:33.342Z",
-      "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
-      "ok": true
+      "fetchedAt": null,
+      "note": "没有拿到任何可用 release（清单来源 LIVE_BENCH_RELEASES，共 11 个）",
+      "ok": false
     },
     "lmarena": {
-      "fetchedAt": "2026-10-22T01:53:33.342Z",
+      "fetchedAt": "2026-10-22T08:32:12.800Z",
       "note": "7/7 个分榜，共 334 条 Arena 分",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-10-22T01:53:33.342Z",
-      "note": "models.json 602 条；api.json 232 provider / 9141 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "fetchedAt": "2026-10-22T08:32:12.800Z",
+      "note": "models.json 602 条；api.json 232 provider / 9142 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-10-22T01:53:33.342Z",
+      "fetchedAt": "2026-10-22T08:32:12.800Z",
       "note": "468 条；已剔除 artificial_analysis 286 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
@@ -105899,7 +101958,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-10-22T01:53:33.342Z",
+      "fetchedAt": "2026-10-22T08:32:12.800Z",
       "note": "486 条（language 323 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }

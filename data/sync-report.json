@@ -3,7 +3,7 @@
   "coding": {
     "_note": "ModelRecord.coding[] 的落地情况。一个赛制一条成绩，跨赛制永不混算。byLeague 是「该赛制覆盖了几个模型」，各赛制之间会重叠（一个模型可以有多条成绩）。flagship 是广场首屏当家门面的命中率——全站覆盖率会被长尾微调模型稀释，首屏才是用户真正看到的东西；without 如实列出仍然没有任何编程成绩的门面。modelsOnlyElo 是只有 WebDev Arena Elo、没有任何百分数成绩的模型：它们能排名，但读不出「解决了几成任务」，前端别把 Elo 塞进百分数的分位池。",
     "byAttribution": {
-      "third-party": 929,
+      "third-party": 685,
       "vendor-self-reported": 232
     },
     "byLeague": {
@@ -16,8 +16,6 @@
       "frontier_code": 49,
       "frontier_swe": 5,
       "gso": 38,
-      "livebench_agentic_coding": 113,
-      "livebench_coding": 131,
       "livecodebench": 8,
       "livecodebench_pro": 2,
       "livecodebench_v6": 1,
@@ -42,7 +40,7 @@
     "byUnit": {
       "elo": 134,
       "index": 180,
-      "pct": 847
+      "pct": 603
     },
     "flagship": {
       "total": 40,
@@ -80,8 +78,8 @@
       ]
     },
     "liveModels": 688,
-    "modelsOnlyElo": 33,
-    "modelsWithAny": 262
+    "modelsOnlyElo": 48,
+    "modelsWithAny": 251
   },
   "codingLeaguesBlocked": {
     "_note": "通过了合规过滤、但因为口径不是「写代码 / 软件工程」而没有进入 coding[] 的榜单，以及因为血缘指向 Artificial Analysis / LMArena 而被拦掉的条数。逐条理由写在 scripts/sync/sources/models-dev.ts 的 CODING_LEAGUES 与 sources/epoch.ts 的 CODING_BENCHMARKS 上方。",
@@ -190,8 +188,8 @@
       "total": 719
     },
     "capabilities.structuredOutput": {
-      "filled": 2,
-      "pct": 0.3,
+      "filled": 1,
+      "pct": 0.1,
       "total": 719
     },
     "capabilities.toolCall": {
@@ -200,23 +198,23 @@
       "total": 719
     },
     "coding.两条以上赛制": {
-      "filled": 223,
-      "pct": 31,
+      "filled": 192,
+      "pct": 26.7,
       "total": 719
     },
     "coding.任一百分数成绩": {
-      "filled": 236,
-      "pct": 32.8,
+      "filled": 210,
+      "pct": 29.2,
       "total": 719
     },
     "coding.任一编程成绩": {
-      "filled": 269,
-      "pct": 37.4,
+      "filled": 258,
+      "pct": 35.9,
       "total": 719
     },
     "coding.有第三方复核成绩": {
-      "filled": 244,
-      "pct": 33.9,
+      "filled": 230,
+      "pct": 32,
       "total": 719
     },
     "contextWindow": {
@@ -310,13 +308,13 @@
       "total": 719
     },
     "scores.三条以上榜单": {
-      "filled": 299,
-      "pct": 41.6,
+      "filled": 294,
+      "pct": 40.9,
       "total": 719
     },
     "scores.任一成绩": {
-      "filled": 376,
-      "pct": 52.3,
+      "filled": 369,
+      "pct": 51.3,
       "total": 719
     },
     "trainingComputeFlop": {
@@ -1601,8 +1599,8 @@
       "arena_text_to_video": 6,
       "arena_video_edit": 2,
       "claw_eval": 6,
-      "livebench_agentic_coding": 114,
-      "livebench_coding": 134,
+      "livebench_agentic_coding": 1,
+      "livebench_coding": 3,
       "livecodebench": 8,
       "livecodebench_pro": 2,
       "livecodebench_v6": 1,
@@ -1964,63 +1962,16 @@
     },
     "liveModels": 688
   },
-  "generatedAt": "2026-10-22T01:53:33.342Z",
+  "generatedAt": "2026-10-22T08:32:12.800Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
-    "matchedModels": 131,
+    "matchedModels": 0,
     "releaseSource": "LIVE_BENCH_RELEASES",
-    "releasesSkipped": [
-      "2024-06-24",
-      "2024-07-26",
-      "2024-08-31",
-      "2024-11-25",
-      "2025-04-02"
-    ],
-    "releasesUsed": [
-      "2026-06-25",
-      "2026-01-08",
-      "2025-12-23",
-      "2025-11-25",
-      "2025-05-30",
-      "2025-04-25"
-    ],
-    "rowsByLeague": {
-      "livebench_agentic_coding": 135,
-      "livebench_coding": 181
-    },
-    "unmatchedSamples": [
-      "amazon.nova-lite-v1:0",
-      "amazon.nova-micro-v1:0",
-      "amazon.nova-pro-v1:0",
-      "arcee-trinity-large-preview",
-      "chatgpt-4o-latest-2025-03-27",
-      "claude-4-1-opus-20250805",
-      "claude-4-opus-20250514",
-      "claude-4-sonnet-20250514",
-      "command-a",
-      "command-r",
-      "command-r-plus",
-      "deepseek-r1-distill-llama-70b",
-      "deepseek-v3.2-speciale",
-      "deepseek-v4.1-flash-max",
-      "dracarys2-72b-instruct",
-      "dracarys2-llama-3.1-70b-instruct",
-      "elephant-alpha",
-      "gemini-2.0-flash-lite-001",
-      "gpt-4.5-preview-2025-02-27",
-      "gpt-5.3-instant",
-      "gpt-5.6-luna-max",
-      "gpt-5.6-sol-max",
-      "gpt-5.6-terra-max",
-      "gpt-6-astra-max",
-      "gpt-6-luna-max",
-      "gpt-6-sol-max",
-      "gpt-6.1-sol-max",
-      "grok-3-beta",
-      "grok-3-mini-beta",
-      "grok-4-0709"
-    ],
-    "upstreamModelNames": 181
+    "releasesSkipped": [],
+    "releasesUsed": [],
+    "rowsByLeague": {},
+    "unmatchedSamples": [],
+    "upstreamModelNames": 0
   },
   "quickPromoted": {
     "_note": "走「注册厂商单源快速晋升」进入快照的模型：厂商在 src/data/vendor-registry.ts 里登记过，且被 openrouter 或 vercel-gateway 任一源收录（litellm 单源不算）。目的是大厂新模型上线当天就能进站，不必等第二个网关跟上。",
@@ -2049,28 +2000,7 @@
       "zhipuai/glm-5.3-prime"
     ]
   },
-  "releaseDateConflicts": [
-    {
-      "from": "2026-09-09",
-      "id": "deepseek/deepseek-v4.1-flash-1017",
-      "to": "2026-10-17"
-    },
-    {
-      "from": "2025-04-30",
-      "id": "meta/llama-guard-4-12b",
-      "to": "2025-04-29"
-    },
-    {
-      "from": "2024-06-26",
-      "id": "openai/o3-deep-research",
-      "to": "2025-06-26"
-    },
-    {
-      "from": "2024-06-26",
-      "id": "openai/o4-mini-deep-research",
-      "to": "2025-06-26"
-    }
-  ],
+  "releaseDateConflicts": [],
   "sources": {
     "derived": {
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
@@ -2089,15 +2019,15 @@
       "ok": true
     },
     "livebench": {
-      "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
-      "ok": true
+      "note": "没有拿到任何可用 release（清单来源 LIVE_BENCH_RELEASES，共 11 个）",
+      "ok": false
     },
     "lmarena": {
       "note": "7/7 个分榜，共 334 条 Arena 分",
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 602 条；api.json 232 provider / 9141 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "note": "models.json 602 条；api.json 232 provider / 9142 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
@@ -2221,7 +2151,5 @@
     "withFlop": 89
   },
   "vendorRegistrySource": "src/data/vendor-registry.ts",
-  "warnings": [
-    "4 个已存在模型的发布日期发生变化，已记入 data/sync-report.json 待审"
-  ]
+  "warnings": []
 }
