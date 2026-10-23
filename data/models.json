@@ -1357,7 +1357,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-10-22T18:08:57.228Z",
+  "generatedAt": "2026-10-23T06:28:07.577Z",
   "models": [
     {
       "benchmarks": {
@@ -2407,7 +2407,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": true,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -2437,7 +2437,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": null,
+        "cachedInputPerMTok": 0.01,
         "inputPerMTok": 0.05,
         "outputPerMTok": 0.4
       },
@@ -2452,6 +2452,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -2867,7 +2868,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.052,
+        "cachedInputPerMTok": 0.08,
         "inputPerMTok": 0.4,
         "outputPerMTok": 1.2
       },
@@ -2884,7 +2885,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -3360,8 +3361,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.4,
-        "inputPerMTok": 2.8,
-        "outputPerMTok": 8.4
+        "inputPerMTok": 0.8,
+        "outputPerMTok": 1
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -3375,8 +3376,8 @@
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
         "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "openrouter",
+        "pricing.outputPerMTok": "openrouter",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -3569,7 +3570,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": false
@@ -3597,12 +3598,11 @@
         "totalB": 0.49
       },
       "pricing": {
-        "cachedInputPerMTok": 0.1,
-        "inputPerMTok": 0.1,
-        "outputPerMTok": 0.1
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -3612,9 +3612,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
@@ -4434,7 +4431,7 @@
         "totalB": 235.09
       },
       "pricing": {
-        "cachedInputPerMTok": 0.11,
+        "cachedInputPerMTok": 0.0574,
         "inputPerMTok": 0.2,
         "outputPerMTok": 0.6
       },
@@ -6283,7 +6280,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.039,
+        "cachedInputPerMTok": 0.06,
         "inputPerMTok": 0.3,
         "outputPerMTok": 1.5
       },
@@ -6298,7 +6295,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -8012,7 +8009,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": true,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -8043,7 +8040,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": null,
+        "cachedInputPerMTok": 0.04,
         "inputPerMTok": 0.2,
         "outputPerMTok": 1.6
       },
@@ -8058,6 +8055,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -9110,9 +9108,9 @@
         "totalB": 9.65
       },
       "pricing": {
-        "cachedInputPerMTok": 0.04,
+        "cachedInputPerMTok": 0.0375,
         "inputPerMTok": 0.1,
-        "outputPerMTok": 0.18
+        "outputPerMTok": 0.2
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -11394,7 +11392,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.003,
+        "cachedInputPerMTok": 0.006,
         "inputPerMTok": 0.03,
         "outputPerMTok": 0.13
       },
@@ -11853,7 +11851,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.04,
+        "cachedInputPerMTok": 0.08,
         "inputPerMTok": 0.4,
         "outputPerMTok": 1.6
       },
@@ -13792,7 +13790,7 @@
       "pricing": {
         "cachedInputPerMTok": null,
         "inputPerMTok": 0.4,
-        "outputPerMTok": 0.861
+        "outputPerMTok": 0.4
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -13997,9 +13995,9 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.075,
-        "inputPerMTok": 0.3,
-        "outputPerMTok": 2.5
+        "cachedInputPerMTok": 0.0825,
+        "inputPerMTok": 0.33,
+        "outputPerMTok": 2.75
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -15392,7 +15390,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.cachedInputPerMTok": "litellm",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -19258,8 +19256,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 1.5,
-        "inputPerMTok": 15,
-        "outputPerMTok": 75
+        "inputPerMTok": 13.5,
+        "outputPerMTok": 67.5
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -19279,7 +19277,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.cachedInputPerMTok": "litellm",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -23622,8 +23620,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.3,
-        "inputPerMTok": 3,
-        "outputPerMTok": 15
+        "inputPerMTok": 2.7,
+        "outputPerMTok": 13.5
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -23642,7 +23640,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.cachedInputPerMTok": "litellm",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -31028,8 +31026,8 @@
         "totalB": 681.41
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0078,
-        "inputPerMTok": 0.2574,
+        "cachedInputPerMTok": 0.007,
+        "inputPerMTok": 0.22,
         "outputPerMTok": 0.66
       },
       "provenance": {
@@ -32136,8 +32134,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.05977899,
-        "inputPerMTok": 0.7,
-        "outputPerMTok": 2.4
+        "inputPerMTok": 0.59778991,
+        "outputPerMTok": 2.39115964
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -35818,7 +35816,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.028,
-        "inputPerMTok": 0.14,
+        "inputPerMTok": 0.15,
         "outputPerMTok": 0.3
       },
       "provenance": {
@@ -37353,8 +37351,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.246,
-        "outputPerMTok": 1
+        "inputPerMTok": 0.23184,
+        "outputPerMTok": 0.96
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -38566,7 +38564,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -38595,12 +38593,11 @@
         "totalB": 25.82
       },
       "pricing": {
-        "cachedInputPerMTok": 0.5,
-        "inputPerMTok": 0.5,
-        "outputPerMTok": 0.5
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -38612,9 +38609,6 @@
         "openWeights": "models.dev",
         "params.activeB": "derived",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
@@ -42595,8 +42589,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.2,
-        "inputPerMTok": 2,
-        "outputPerMTok": 12
+        "inputPerMTok": 1.8,
+        "outputPerMTok": 10.8
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -48317,7 +48311,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.025,
-        "inputPerMTok": 0.1,
+        "inputPerMTok": 0.05,
         "outputPerMTok": 0.25
       },
       "provenance": {
@@ -48405,7 +48399,7 @@
         "totalB": 25.81
       },
       "pricing": {
-        "cachedInputPerMTok": 0.05,
+        "cachedInputPerMTok": 0.049,
         "inputPerMTok": 0.1,
         "outputPerMTok": 0.34
       },
@@ -48793,7 +48787,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -48823,12 +48817,11 @@
         "totalB": 5.12
       },
       "pricing": {
-        "cachedInputPerMTok": 0.1,
-        "inputPerMTok": 0.1,
-        "outputPerMTok": 0.1
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -48838,9 +48831,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
@@ -48866,7 +48856,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -48896,7 +48886,7 @@
         "totalB": 8
       },
       "pricing": {
-        "cachedInputPerMTok": 0.2,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.02,
         "outputPerMTok": 0.1
       },
@@ -48911,7 +48901,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -51273,7 +51262,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -51301,7 +51290,7 @@
         "totalB": 23.84
       },
       "pricing": {
-        "cachedInputPerMTok": 0.03,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.03,
         "outputPerMTok": 0.12
       },
@@ -51316,7 +51305,6 @@
         "openWeights": "models.dev",
         "params.activeB": "derived",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -52366,7 +52354,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": false
@@ -52394,7 +52382,7 @@
         "totalB": 1.24
       },
       "pricing": {
-        "cachedInputPerMTok": 0.1,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.1,
         "outputPerMTok": 0.1
       },
@@ -52412,9 +52400,8 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
         "scores": "derived",
@@ -52467,7 +52454,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -52495,7 +52482,7 @@
         "totalB": 1.24
       },
       "pricing": {
-        "cachedInputPerMTok": 0.1,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.027,
         "outputPerMTok": 0.201
       },
@@ -52513,7 +52500,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "epoch.ai",
@@ -52568,7 +52554,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": false
@@ -52596,9 +52582,9 @@
         "totalB": 3.21
       },
       "pricing": {
-        "cachedInputPerMTok": 0.1,
-        "inputPerMTok": 0.1,
-        "outputPerMTok": 0.1
+        "cachedInputPerMTok": null,
+        "inputPerMTok": 0.15,
+        "outputPerMTok": 0.6
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -52612,7 +52598,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -53056,8 +53041,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.13,
-        "inputPerMTok": 0.6,
-        "outputPerMTok": 0.724
+        "inputPerMTok": 0.59,
+        "outputPerMTok": 0.71
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -58856,7 +58841,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": false
@@ -58901,12 +58886,11 @@
         "totalB": 22.25
       },
       "pricing": {
-        "cachedInputPerMTok": 0.3,
-        "inputPerMTok": 0.3,
-        "outputPerMTok": 0.9
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "coding": "derived",
@@ -58917,9 +58901,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -59318,7 +59299,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": null,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -59351,19 +59332,16 @@
       "openWeights": false,
       "params": {
         "activeB": null,
-        "confidence": "estimated",
-        "sizeTier": 2,
-        "sizeTierBasis": "price",
+        "confidence": "unknown",
         "totalB": null
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.4,
-        "outputPerMTok": 2
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
         "benchmarks.swe_bench_vendor": "models.dev",
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "coding": "derived",
@@ -59373,9 +59351,6 @@
         "modalities": "models.dev",
         "name": "models.dev",
         "openWeights": "models.dev",
-        "params.sizeTier": "derived",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -59482,7 +59457,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -59511,12 +59486,11 @@
         "totalB": 22.23
       },
       "pricing": {
-        "cachedInputPerMTok": 0.1,
-        "inputPerMTok": 0.1,
-        "outputPerMTok": 0.3
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -59527,9 +59501,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -59603,8 +59574,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.1,
-        "outputPerMTok": 0.3
+        "inputPerMTok": 0.07,
+        "outputPerMTok": 0.28
       },
       "provenance": {
         "benchmarks.swe_bench_vendor": "models.dev",
@@ -59620,8 +59591,8 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -60792,7 +60763,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -60820,9 +60791,9 @@
         "totalB": 8.02
       },
       "pricing": {
-        "cachedInputPerMTok": 0.15,
-        "inputPerMTok": 0.15,
-        "outputPerMTok": 0.15
+        "cachedInputPerMTok": null,
+        "inputPerMTok": 0.1,
+        "outputPerMTok": 0.1
       },
       "provenance": {
         "benchmarks.gpqa_diamond": "epoch.ai",
@@ -60836,9 +60807,8 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -60890,7 +60860,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -60918,15 +60888,14 @@
         "totalB": 7.25
       },
       "pricing": {
-        "cachedInputPerMTok": 0.2,
-        "inputPerMTok": 0.2,
-        "outputPerMTok": 0.2
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
         "benchmarks.eci": "epoch.ai",
         "benchmarks.gpqa_diamond": "epoch.ai",
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -60936,9 +60905,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -64023,7 +63989,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": true,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -64051,7 +64017,7 @@
         "totalB": 12.25
       },
       "pricing": {
-        "cachedInputPerMTok": null,
+        "cachedInputPerMTok": 0.015,
         "inputPerMTok": 0.15,
         "outputPerMTok": 0.15
       },
@@ -64068,6 +64034,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -64939,8 +64906,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.01,
-        "inputPerMTok": 0.09375,
-        "outputPerMTok": 0.25
+        "inputPerMTok": 0.07935,
+        "outputPerMTok": 0.2116
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -66247,7 +66214,7 @@
         "totalB": 1023.89
       },
       "pricing": {
-        "cachedInputPerMTok": 0.15,
+        "cachedInputPerMTok": 0.4,
         "inputPerMTok": 0.6,
         "outputPerMTok": 2.5
       },
@@ -66845,7 +66812,7 @@
         "webdev_arena_elo": 1337
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -66882,15 +66849,14 @@
         "totalB": 1014.69
       },
       "pricing": {
-        "cachedInputPerMTok": 0.15,
-        "inputPerMTok": 1.15,
-        "outputPerMTok": 8
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
         "benchmarks.gpqa_diamond": "epoch.ai",
         "benchmarks.webdev_arena_elo": "epoch.ai",
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "coding": "derived",
@@ -66901,9 +66867,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -70076,7 +70039,7 @@
         "totalB": 120
       },
       "pricing": {
-        "cachedInputPerMTok": 0.15,
+        "cachedInputPerMTok": 0.06,
         "inputPerMTok": 0.15,
         "outputPerMTok": 0.65
       },
@@ -82747,7 +82710,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -82774,20 +82737,19 @@
       "params": {
         "activeB": null,
         "confidence": "estimated",
-        "sizeTier": 3,
-        "sizeTierBasis": "price+naming",
+        "sizeTier": 1,
+        "sizeTierBasis": "naming",
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.5,
-        "inputPerMTok": 5,
-        "outputPerMTok": 30
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
         "benchmarks.eci": "epoch.ai",
         "benchmarks.gpqa_diamond": "epoch.ai",
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -82797,9 +82759,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -87577,7 +87536,7 @@
         "totalB": 114.66
       },
       "pricing": {
-        "cachedInputPerMTok": 0.05,
+        "cachedInputPerMTok": 0.066,
         "inputPerMTok": 0.15,
         "outputPerMTok": 0.6
       },
@@ -87817,7 +87776,7 @@
         "totalB": 19.11
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0275,
+        "cachedInputPerMTok": 0.02,
         "inputPerMTok": 0.055,
         "outputPerMTok": 0.2
       },
@@ -92533,7 +92492,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": null,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -92562,11 +92521,10 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.02,
-        "outputPerMTok": 0.1
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -92575,8 +92533,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "derived",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
@@ -94391,9 +94347,9 @@
         "totalB": 298.79
       },
       "pricing": {
-        "cachedInputPerMTok": 0.058,
-        "inputPerMTok": 0.172,
-        "outputPerMTok": 0.572
+        "cachedInputPerMTok": 0.06,
+        "inputPerMTok": 0.18,
+        "outputPerMTok": 0.6
       },
       "provenance": {
         "benchmarks.swe_bench_vendor": "models.dev",
@@ -96778,12 +96734,13 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "vercel-gateway",
         "releaseDatePrecision": "vercel-gateway",
+        "retiredAt": "derived",
         "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-11-19",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-23",
       "scores": [
         {
           "attribution": "third-party",
@@ -100823,9 +100780,9 @@
         "totalB": 306.66
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0028,
-        "inputPerMTok": 0.14,
-        "outputPerMTok": 0.28
+        "cachedInputPerMTok": 0.01,
+        "inputPerMTok": 0.1,
+        "outputPerMTok": 0.3
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -100896,14 +100853,14 @@
       "params": {
         "activeB": null,
         "confidence": "estimated",
-        "sizeTier": 1,
+        "sizeTier": 2,
         "sizeTierBasis": "price",
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0028,
-        "inputPerMTok": 0.14,
-        "outputPerMTok": 0.28
+        "cachedInputPerMTok": 0.088,
+        "inputPerMTok": 0.44,
+        "outputPerMTok": 2.2
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -100916,9 +100873,9 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
+        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
@@ -100969,14 +100926,14 @@
       "params": {
         "activeB": null,
         "confidence": "estimated",
-        "sizeTier": 3,
+        "sizeTier": 4,
         "sizeTierBasis": "price+naming",
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0036,
-        "inputPerMTok": 0.435,
-        "outputPerMTok": 0.87
+        "cachedInputPerMTok": 0.2,
+        "inputPerMTok": 1,
+        "outputPerMTok": 3
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -105477,42 +105434,42 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-10-22T18:08:57.228Z",
+      "fetchedAt": "2026-10-23T06:28:07.577Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-10-22T18:08:57.228Z",
+      "fetchedAt": "2026-10-23T06:28:07.577Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 418 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-10-22T18:08:57.228Z",
+      "fetchedAt": "2026-10-23T06:28:07.577Z",
       "note": "请求 239 个开源模型，成功 235，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-10-22T18:08:57.228Z",
+      "fetchedAt": "2026-10-23T06:28:07.577Z",
       "note": "4244 条（对话类 3247 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-10-22T18:08:57.228Z",
+      "fetchedAt": "2026-10-23T06:28:07.577Z",
       "note": "LiveBench 2.0（2026-10 起）。上游整站重写，v1 的 table_<release>.csv / categories_<release>.json 已全部下线（404），数据改从 data/<release>/breakdown.json 取。2.0 是长程任务评测（跑几个月的运维、做 PPT/PDF、写研究报告），与 v1 的题目集不是同一把尺子，**两条赛制的分数不可比较**，故赛制 id 一律 `livebench2_` 前缀另起一池。release 20261014 是完整快照（七个分类每个都有全部型号），不需要像 v1 那样跨 release 取并集。`livebench2_overall` 是本站按七类等权算的均分，上游不发布这个数。",
       "ok": true
     },
     "lmarena": {
-      "fetchedAt": "2026-10-22T18:08:57.228Z",
+      "fetchedAt": "2026-10-23T06:28:07.577Z",
       "note": "7/7 个分榜，共 334 条 Arena 分",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-10-22T18:08:57.228Z",
-      "note": "models.json 602 条；api.json 232 provider / 9146 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "fetchedAt": "2026-10-23T06:28:07.577Z",
+      "note": "models.json 602 条；api.json 230 provider / 8851 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-10-22T18:08:57.228Z",
+      "fetchedAt": "2026-10-23T06:28:07.577Z",
       "note": "468 条；已剔除 artificial_analysis 286 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
@@ -105522,8 +105479,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-10-22T18:08:57.228Z",
-      "note": "486 条（language 323 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-10-23T06:28:07.577Z",
+      "note": "478 条（language 316 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
