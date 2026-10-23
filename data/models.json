@@ -651,7 +651,7 @@
     {
       "id": "livebench2_browser",
       "inEci": false,
-      "models": 48,
+      "models": 49,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -663,7 +663,7 @@
     {
       "id": "livebench2_coding",
       "inEci": false,
-      "models": 48,
+      "models": 49,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -675,7 +675,7 @@
     {
       "id": "livebench2_data_analysis",
       "inEci": false,
-      "models": 48,
+      "models": 49,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -687,7 +687,7 @@
     {
       "id": "livebench2_design",
       "inEci": false,
-      "models": 48,
+      "models": 49,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -699,7 +699,7 @@
     {
       "id": "livebench2_long_agentic",
       "inEci": false,
-      "models": 48,
+      "models": 49,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -711,7 +711,7 @@
     {
       "id": "livebench2_overall",
       "inEci": false,
-      "models": 48,
+      "models": 49,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -723,7 +723,7 @@
     {
       "id": "livebench2_reasoning",
       "inEci": false,
-      "models": 48,
+      "models": 49,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -735,7 +735,7 @@
     {
       "id": "livebench2_research",
       "inEci": false,
-      "models": 48,
+      "models": 49,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -1357,7 +1357,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-10-23T06:28:07.577Z",
+  "generatedAt": "2026-10-23T17:57:17.826Z",
   "models": [
     {
       "benchmarks": {
@@ -4431,7 +4431,7 @@
         "totalB": 235.09
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0574,
+        "cachedInputPerMTok": 0.11,
         "inputPerMTok": 0.2,
         "outputPerMTok": 0.6
       },
@@ -6353,7 +6353,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.07,
         "inputPerMTok": 0.2,
-        "outputPerMTok": 0.8964
+        "outputPerMTok": 0.89544
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -35180,6 +35180,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "livebench2_coding",
+          "score": 76.52,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/?release=20261014",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "frontier_code",
           "score": 18.8,
           "source": "epoch.ai",
@@ -35364,6 +35372,70 @@
           "score": 91.04,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "livebench2_browser",
+          "score": 0,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/?release=20261014",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "livebench2_coding",
+          "score": 76.52,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/?release=20261014",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "livebench2_data_analysis",
+          "score": 68,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/?release=20261014",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "livebench2_design",
+          "score": 74.63,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/?release=20261014",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "livebench2_long_agentic",
+          "score": 37.06,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/?release=20261014",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "livebench2_overall",
+          "score": 57.86,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/?release=20261014",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "livebench2_reasoning",
+          "score": 70.58,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/?release=20261014",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "livebench2_research",
+          "score": 78.22,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/?release=20261014",
           "unit": "pct"
         },
         {
@@ -35816,7 +35888,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.028,
-        "inputPerMTok": 0.15,
+        "inputPerMTok": 0.142,
         "outputPerMTok": 0.3
       },
       "provenance": {
@@ -37351,8 +37423,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.23184,
-        "outputPerMTok": 0.96
+        "inputPerMTok": 0.246246,
+        "outputPerMTok": 1.1592
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -48399,7 +48471,7 @@
         "totalB": 25.81
       },
       "pricing": {
-        "cachedInputPerMTok": 0.049,
+        "cachedInputPerMTok": 0.05,
         "inputPerMTok": 0.1,
         "outputPerMTok": 0.34
       },
@@ -51751,7 +51823,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": true,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -51779,7 +51851,7 @@
         "totalB": 70.55
       },
       "pricing": {
-        "cachedInputPerMTok": null,
+        "cachedInputPerMTok": 0.16,
         "inputPerMTok": 0.72,
         "outputPerMTok": 0.72
       },
@@ -51797,6 +51869,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -53041,7 +53114,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.13,
-        "inputPerMTok": 0.59,
+        "inputPerMTok": 0.6,
         "outputPerMTok": 0.71
       },
       "provenance": {
@@ -60014,8 +60087,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.02,
-        "inputPerMTok": 0.2,
-        "outputPerMTok": 0.2
+        "inputPerMTok": 0.15,
+        "outputPerMTok": 0.15
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -60157,8 +60230,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.33615,
-        "outputPerMTok": 0.4482
+        "inputPerMTok": 0.33579,
+        "outputPerMTok": 0.44772
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -68538,6 +68611,146 @@
       "retiredAt": null,
       "scores": [],
       "slug": "moonshotai-kimi-k3-fast",
+      "trainingComputeFlop": null,
+      "vendorId": "moonshotai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 1048576,
+      "firstSeenAt": "2026-10-23T17:57:17.826Z",
+      "id": "moonshotai/kimi-k3.1-pro",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 1048576,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Kimi K3.1 PRO",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 4,
+        "sizeTierBasis": "price+naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.2,
+        "inputPerMTok": 2,
+        "outputPerMTok": 10
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "vercel-gateway",
+        "pricing.inputPerMTok": "vercel-gateway",
+        "pricing.outputPerMTok": "vercel-gateway",
+        "releaseDate": "vercel-gateway",
+        "releaseDatePrecision": "vercel-gateway",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-10-23",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "moonshotai-kimi-k3-1-pro",
+      "trainingComputeFlop": null,
+      "vendorId": "moonshotai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 1048576,
+      "firstSeenAt": "2026-10-23T17:57:17.826Z",
+      "id": "moonshotai/kimi-k3.1-pro-highspeed",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 1048576,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Kimi K3.1 PRO Highspeed",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 5,
+        "sizeTierBasis": "price+naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.2,
+        "inputPerMTok": 4,
+        "outputPerMTok": 20
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "vercel-gateway",
+        "pricing.inputPerMTok": "vercel-gateway",
+        "pricing.outputPerMTok": "vercel-gateway",
+        "releaseDate": "vercel-gateway",
+        "releaseDatePrecision": "vercel-gateway",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-10-23",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "moonshotai-kimi-k3-1-pro-highspeed",
       "trainingComputeFlop": null,
       "vendorId": "moonshotai"
     },
@@ -87776,7 +87989,7 @@
         "totalB": 19.11
       },
       "pricing": {
-        "cachedInputPerMTok": 0.02,
+        "cachedInputPerMTok": 0.0275,
         "inputPerMTok": 0.055,
         "outputPerMTok": 0.2
       },
@@ -105434,42 +105647,42 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-10-23T06:28:07.577Z",
+      "fetchedAt": "2026-10-23T17:57:17.826Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-10-23T06:28:07.577Z",
+      "fetchedAt": "2026-10-23T17:57:17.826Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 418 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-10-23T06:28:07.577Z",
+      "fetchedAt": "2026-10-23T17:57:17.826Z",
       "note": "请求 239 个开源模型，成功 235，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-10-23T06:28:07.577Z",
+      "fetchedAt": "2026-10-23T17:57:17.826Z",
       "note": "4244 条（对话类 3247 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-10-23T06:28:07.577Z",
+      "fetchedAt": "2026-10-23T17:57:17.826Z",
       "note": "LiveBench 2.0（2026-10 起）。上游整站重写，v1 的 table_<release>.csv / categories_<release>.json 已全部下线（404），数据改从 data/<release>/breakdown.json 取。2.0 是长程任务评测（跑几个月的运维、做 PPT/PDF、写研究报告），与 v1 的题目集不是同一把尺子，**两条赛制的分数不可比较**，故赛制 id 一律 `livebench2_` 前缀另起一池。release 20261014 是完整快照（七个分类每个都有全部型号），不需要像 v1 那样跨 release 取并集。`livebench2_overall` 是本站按七类等权算的均分，上游不发布这个数。",
       "ok": true
     },
     "lmarena": {
-      "fetchedAt": "2026-10-23T06:28:07.577Z",
+      "fetchedAt": "2026-10-23T17:57:17.826Z",
       "note": "7/7 个分榜，共 334 条 Arena 分",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-10-23T06:28:07.577Z",
-      "note": "models.json 602 条；api.json 230 provider / 8851 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "fetchedAt": "2026-10-23T17:57:17.826Z",
+      "note": "models.json 602 条；api.json 230 provider / 8858 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-10-23T06:28:07.577Z",
+      "fetchedAt": "2026-10-23T17:57:17.826Z",
       "note": "468 条；已剔除 artificial_analysis 286 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
@@ -105479,8 +105692,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-10-23T06:28:07.577Z",
-      "note": "478 条（language 316 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-10-23T17:57:17.826Z",
+      "note": "480 条（language 318 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
