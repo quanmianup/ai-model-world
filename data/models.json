@@ -1357,7 +1357,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-10-24T06:26:27.233Z",
+  "generatedAt": "2026-10-24T16:54:17.356Z",
   "models": [
     {
       "benchmarks": {
@@ -37498,7 +37498,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.24,
+        "inputPerMTok": 0.23184,
         "outputPerMTok": 1
       },
       "provenance": {
@@ -105806,42 +105806,42 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-10-24T06:26:27.233Z",
+      "fetchedAt": "2026-10-24T16:54:17.356Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-10-24T06:26:27.233Z",
+      "fetchedAt": "2026-10-24T16:54:17.356Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 418 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-10-24T06:26:27.233Z",
+      "fetchedAt": "2026-10-24T16:54:17.356Z",
       "note": "请求 239 个开源模型，成功 235，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-10-24T06:26:27.233Z",
+      "fetchedAt": "2026-10-24T16:54:17.356Z",
       "note": "4260 条（对话类 3248 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-10-24T06:26:27.233Z",
+      "fetchedAt": "2026-10-24T16:54:17.356Z",
       "note": "LiveBench 2.0（2026-10 起）。上游整站重写，v1 的 table_<release>.csv / categories_<release>.json 已全部下线（404），数据改从 data/<release>/breakdown.json 取。2.0 是长程任务评测（跑几个月的运维、做 PPT/PDF、写研究报告），与 v1 的题目集不是同一把尺子，**两条赛制的分数不可比较**，故赛制 id 一律 `livebench2_` 前缀另起一池。release 20261014 是完整快照（七个分类每个都有全部型号），不需要像 v1 那样跨 release 取并集。`livebench2_overall` 是本站按七类等权算的均分，上游不发布这个数。",
       "ok": true
     },
     "lmarena": {
-      "fetchedAt": "2026-10-24T06:26:27.233Z",
+      "fetchedAt": "2026-10-24T16:54:17.356Z",
       "note": "7/7 个分榜，共 334 条 Arena 分",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-10-24T06:26:27.233Z",
-      "note": "models.json 604 条；api.json 230 provider / 8888 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "fetchedAt": "2026-10-24T16:54:17.356Z",
+      "note": "models.json 604 条；api.json 230 provider / 8894 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-10-24T06:26:27.233Z",
+      "fetchedAt": "2026-10-24T16:54:17.356Z",
       "note": "469 条；已剔除 artificial_analysis 287 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
@@ -105851,7 +105851,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-10-24T06:26:27.233Z",
+      "fetchedAt": "2026-10-24T16:54:17.356Z",
       "note": "480 条（language 318 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
