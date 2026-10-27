@@ -27,7 +27,7 @@
     {
       "id": "aime",
       "inEci": true,
-      "models": 211,
+      "models": 212,
       "randomBaseline": 0.1,
       "releaseDate": "2024-12-19",
       "scoreCeiling": 100,
@@ -387,7 +387,7 @@
     {
       "id": "ebr_bench",
       "inEci": true,
-      "models": 33,
+      "models": 34,
       "randomBaseline": 0,
       "releaseDate": "2026-07-01",
       "scoreCeiling": 100,
@@ -507,7 +507,7 @@
     {
       "id": "frontiermath_tier_4_v2",
       "inEci": true,
-      "models": 84,
+      "models": 85,
       "randomBaseline": 0,
       "releaseDate": "2026-06-12",
       "scoreCeiling": 100,
@@ -519,7 +519,7 @@
     {
       "id": "frontiermath_tiers_1_3_v2",
       "inEci": true,
-      "models": 112,
+      "models": 113,
       "randomBaseline": 0,
       "releaseDate": "2026-06-12",
       "scoreCeiling": 95,
@@ -531,7 +531,7 @@
     {
       "id": "furniture_assembly",
       "inEci": true,
-      "models": 40,
+      "models": 41,
       "randomBaseline": 30,
       "releaseDate": "2026-09-23",
       "scoreCeiling": 100,
@@ -579,7 +579,7 @@
     {
       "id": "gpqa_diamond",
       "inEci": true,
-      "models": 214,
+      "models": 215,
       "randomBaseline": 25,
       "releaseDate": "2023-11-20",
       "scoreCeiling": 97,
@@ -891,7 +891,7 @@
     {
       "id": "mystery_game_puzzles",
       "inEci": true,
-      "models": 104,
+      "models": 105,
       "randomBaseline": 9.22,
       "releaseDate": "2026-07-30",
       "scoreCeiling": 100,
@@ -1035,7 +1035,7 @@
     {
       "id": "simpleqa_verified",
       "inEci": true,
-      "models": 108,
+      "models": 109,
       "randomBaseline": 0,
       "releaseDate": "2025-09-09",
       "scoreCeiling": 100,
@@ -1357,7 +1357,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-10-27T06:47:39.758Z",
+  "generatedAt": "2026-10-27T18:54:38.608Z",
   "models": [
     {
       "benchmarks": {
@@ -4504,7 +4504,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.11,
         "inputPerMTok": 0.2,
-        "outputPerMTok": 0.6
+        "outputPerMTok": 0.75
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -7547,7 +7547,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.0574,
-        "inputPerMTok": 0.98,
+        "inputPerMTok": 0.5,
         "outputPerMTok": 3.95
       },
       "provenance": {
@@ -68572,7 +68572,7 @@
         "totalB": 405
       },
       "pricing": {
-        "cachedInputPerMTok": 0.15,
+        "cachedInputPerMTok": 0.2,
         "inputPerMTok": 1,
         "outputPerMTok": 3
       },
@@ -85870,11 +85870,11 @@
     },
     {
       "benchmarks": {
-        "aime": null,
+        "aime": 100,
         "arc_agi_2": null,
         "eci": null,
         "fiction_live": null,
-        "gpqa_diamond": null,
+        "gpqa_diamond": 94.32,
         "swe_bench_pro": null,
         "swe_bench_vendor": null,
         "swe_bench_verified": null,
@@ -85890,7 +85890,7 @@
         {
           "attribution": "third-party",
           "league": "livebench2_coding",
-          "score": 91.65,
+          "score": 94.43,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/?release=20261025",
           "unit": "pct"
@@ -85927,6 +85927,8 @@
         "outputPerMTok": 5
       },
       "provenance": {
+        "benchmarks.aime": "epoch.ai",
+        "benchmarks.gpqa_diamond": "epoch.ai",
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
@@ -85952,6 +85954,54 @@
       "scores": [
         {
           "attribution": "third-party",
+          "league": "aime",
+          "score": 100,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "ebr_bench",
+          "score": 78.1,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "frontiermath_tier_4_v2",
+          "score": 92.68,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "frontiermath_tiers_1_3_v2",
+          "score": 90.88,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 79.17,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "gpqa_diamond",
+          "score": 94.32,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "livebench2_browser",
           "score": 94.02,
           "source": "livebench",
@@ -85961,7 +86011,7 @@
         {
           "attribution": "third-party",
           "league": "livebench2_coding",
-          "score": 91.65,
+          "score": 94.43,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/?release=20261025",
           "unit": "pct"
@@ -85993,7 +86043,7 @@
         {
           "attribution": "third-party",
           "league": "livebench2_overall",
-          "score": 81.36,
+          "score": 81.75,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/?release=20261025",
           "unit": "pct"
@@ -86012,6 +86062,22 @@
           "score": 76.9,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/?release=20261025",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "mystery_game_puzzles",
+          "score": 74,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "simpleqa_verified",
+          "score": 57.3,
+          "source": "epoch.ai",
+          "sourceUrl": null,
           "unit": "pct"
         }
       ],
@@ -104711,43 +104777,43 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-10-27T06:47:39.758Z",
+      "fetchedAt": "2026-10-27T18:54:38.608Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-10-27T06:47:39.758Z",
-      "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 418 个模型实体；合规拦截 1 个文件",
+      "fetchedAt": "2026-10-27T18:54:38.608Z",
+      "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 419 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-10-27T06:47:39.758Z",
+      "fetchedAt": "2026-10-27T18:54:38.608Z",
       "note": "请求 240 个开源模型，成功 236，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-10-27T06:47:39.758Z",
+      "fetchedAt": "2026-10-27T18:54:38.608Z",
       "note": "4323 条（对话类 3309 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-10-27T06:47:39.758Z",
+      "fetchedAt": "2026-10-27T18:54:38.608Z",
       "note": "LiveBench 2.0（2026-10 起）。上游整站重写，v1 的 table_<release>.csv / categories_<release>.json 已全部下线（404），数据改从 data/<release>/breakdown.json 取。2.0 是长程任务评测（跑几个月的运维、做 PPT/PDF、写研究报告），与 v1 的题目集不是同一把尺子，**两条赛制的分数不可比较**，故赛制 id 一律 `livebench2_` 前缀另起一池。release 20261025 是完整快照（七个分类每个都有全部型号），不需要像 v1 那样跨 release 取并集。`livebench2_overall` 是本站按七类等权算的均分，上游不发布这个数。",
       "ok": true
     },
     "lmarena": {
-      "fetchedAt": "2026-10-27T06:47:39.758Z",
+      "fetchedAt": "2026-10-27T18:54:38.608Z",
       "note": "7/7 个分榜，共 334 条 Arena 分",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-10-27T06:47:39.758Z",
-      "note": "models.json 607 条；api.json 232 provider / 8947 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "fetchedAt": "2026-10-27T18:54:38.608Z",
+      "note": "models.json 607 条；api.json 232 provider / 8944 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-10-27T06:47:39.758Z",
-      "note": "464 条；已剔除 artificial_analysis 283 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-10-27T18:54:38.608Z",
+      "note": "463 条；已剔除 artificial_analysis 282 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -104756,8 +104822,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-10-27T06:47:39.758Z",
-      "note": "482 条（language 320 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-10-27T18:54:38.608Z",
+      "note": "496 条（language 320 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
