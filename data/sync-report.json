@@ -3,7 +3,7 @@
   "coding": {
     "_note": "ModelRecord.coding[] 的落地情况。一个赛制一条成绩，跨赛制永不混算。byLeague 是「该赛制覆盖了几个模型」，各赛制之间会重叠（一个模型可以有多条成绩）。flagship 是广场首屏当家门面的命中率——全站覆盖率会被长尾微调模型稀释，首屏才是用户真正看到的东西；without 如实列出仍然没有任何编程成绩的门面。modelsOnlyElo 是只有 WebDev Arena Elo、没有任何百分数成绩的模型：它们能排名，但读不出「解决了几成任务」，前端别把 Elo 塞进百分数的分位池。",
     "byAttribution": {
-      "third-party": 731,
+      "third-party": 732,
       "vendor-self-reported": 232
     },
     "byLeague": {
@@ -16,7 +16,7 @@
       "frontier_code": 49,
       "frontier_swe": 5,
       "gso": 44,
-      "livebench2_coding": 29,
+      "livebench2_coding": 30,
       "livecodebench": 8,
       "livecodebench_pro": 2,
       "livecodebench_v6": 1,
@@ -41,7 +41,7 @@
     "byUnit": {
       "elo": 134,
       "index": 183,
-      "pct": 646
+      "pct": 647
     },
     "flagship": {
       "total": 40,
@@ -860,12 +860,12 @@
         "curated": false,
         "file": "frontiermath_erdos.csv",
         "inEci": false,
-        "landed": 13,
+        "landed": 14,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 13,
+        "rows": 14,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 13,
+        "scored": 14,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -1593,7 +1593,6 @@
       }
     },
     "nonEpochLeagues": {
-      "arena_document": 42,
       "arena_image_edit": 16,
       "arena_image_to_video": 6,
       "arena_search": 13,
@@ -1601,14 +1600,14 @@
       "arena_text_to_video": 6,
       "arena_video_edit": 2,
       "claw_eval": 6,
-      "livebench2_browser": 29,
-      "livebench2_coding": 29,
-      "livebench2_data_analysis": 29,
-      "livebench2_design": 29,
-      "livebench2_long_agentic": 29,
-      "livebench2_overall": 29,
-      "livebench2_reasoning": 29,
-      "livebench2_research": 29,
+      "livebench2_browser": 30,
+      "livebench2_coding": 30,
+      "livebench2_data_analysis": 30,
+      "livebench2_design": 30,
+      "livebench2_long_agentic": 30,
+      "livebench2_overall": 30,
+      "livebench2_reasoning": 30,
+      "livebench2_research": 30,
       "livebench_agentic_coding": 1,
       "livebench_coding": 3,
       "livecodebench": 8,
@@ -1972,30 +1971,30 @@
     },
     "liveModels": 694
   },
-  "generatedAt": "2026-10-29T19:11:03.664Z",
+  "generatedAt": "2026-10-30T07:42:00.847Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。**2026-10 起上游改版成 LiveBench 2.0**，榜单数据在 data/<release>/breakdown.json，release 清单从站点 JS bundle 里解析（上游每发一版就把 id 加进那个数组），解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。2.0 的七个分类与 v1 的两个分组是**不同的赛制**：id 带 livebench2_ 前缀，分数不可互相比较。v1 时期的老规矩一并记着：releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
-    "matchedModels": 29,
+    "matchedModels": 30,
     "releaseSource": "v2/bundle",
     "releasesSkipped": [],
     "releasesUsed": [
       "20261025"
     ],
     "rowsByLeague": {
-      "livebench2_browser": 31,
-      "livebench2_coding": 31,
-      "livebench2_data_analysis": 31,
-      "livebench2_design": 31,
-      "livebench2_long_agentic": 31,
-      "livebench2_overall": 31,
-      "livebench2_reasoning": 31,
-      "livebench2_research": 31
+      "livebench2_browser": 32,
+      "livebench2_coding": 32,
+      "livebench2_data_analysis": 32,
+      "livebench2_design": 32,
+      "livebench2_long_agentic": 32,
+      "livebench2_overall": 32,
+      "livebench2_reasoning": 32,
+      "livebench2_research": 32
     },
     "unmatchedSamples": [
       "nemotron-super-vl-3.5-nvfp4",
       "smaug-nemotron-3.5-nvfp4"
     ],
-    "upstreamModelNames": 31,
+    "upstreamModelNames": 32,
     "v2Release": "20261025"
   },
   "quickPromoted": {
@@ -2038,7 +2037,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4518 条（对话类 3489 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4537 条（对话类 3500 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -2046,11 +2045,11 @@
       "ok": true
     },
     "lmarena": {
-      "note": "7/7 个分榜，共 335 条 Arena 分",
+      "note": "6/7 个分榜，共 291 条 Arena 分；失败 document",
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 607 条；api.json 233 provider / 8918 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "note": "models.json 607 条；api.json 233 provider / 8924 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
@@ -2062,7 +2061,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "note": "499 条（language 321 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "500 条（language 321 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
