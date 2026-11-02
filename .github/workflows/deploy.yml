@@ -48,14 +48,9 @@ jobs:
           find out -type f 2>/dev/null | wc -l
           test -f out/index.html || { echo "::error::out/index.html 不存在，构建未产出静态文件"; exit 1; }
 
-      - name: Commit data snapshot
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
-          git diff --staged --quiet || git commit -m "chore: data snapshot $(date -u +%FT%TZ)"
-          git push || true
-
+      # 快照提交只由 sync.yml 负责。这里原本也 git add data + commit + push，
+      # 结果两个 workflow 改同一批 data/*.json：后跑的那个 rebase 必冲突，
+      # 冲突后 push 被拒 → 每天失败 → 每天一封失败邮件。本站只负责构建和发布。
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
