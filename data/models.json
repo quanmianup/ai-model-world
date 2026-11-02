@@ -109,6 +109,18 @@
       "unit": "pct"
     },
     {
+      "id": "arena_document",
+      "inEci": false,
+      "models": 42,
+      "randomBaseline": null,
+      "releaseDate": null,
+      "scoreCeiling": null,
+      "scoreColumn": "rating",
+      "sourceFile": "huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+      "supersededBy": null,
+      "unit": "elo"
+    },
+    {
       "id": "arena_image_edit",
       "inEci": false,
       "models": 16,
@@ -1345,7 +1357,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-11-02T03:07:10.015Z",
+  "generatedAt": "2026-11-02T03:25:39.450Z",
   "models": [
     {
       "benchmarks": {
@@ -11937,6 +11949,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1444.1,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "critpt",
           "score": 9.14,
           "source": "epoch.ai",
@@ -16100,6 +16120,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1496.1,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "arena_search",
           "score": 1229.1,
           "source": "lmarena",
@@ -17012,6 +17040,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1420,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "balrog",
           "score": 31.2,
           "source": "epoch.ai",
@@ -17301,6 +17337,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1420,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -19544,6 +19588,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1462.2,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "balrog",
           "score": 43.5,
           "source": "epoch.ai",
@@ -19995,6 +20047,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1462.2,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -20500,6 +20560,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1507.1,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "chess_puzzles",
           "score": 21,
           "source": "epoch.ai",
@@ -20986,6 +21054,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1495,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "arena_search",
           "score": 1230.1,
           "source": "lmarena",
@@ -21445,6 +21521,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1464.1,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -21986,6 +22070,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1516.3,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -23732,6 +23824,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1449.8,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "chess_puzzles",
           "score": 10,
           "source": "epoch.ai",
@@ -24158,6 +24258,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1449.8,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -24614,6 +24722,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1482.2,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "blueprint_bench_2",
           "score": 6.72,
           "source": "epoch.ai",
@@ -25024,6 +25140,14 @@
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1466.1,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -39579,6 +39703,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1421.2,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "balrog",
           "score": 43.3,
           "source": "epoch.ai",
@@ -40007,6 +40139,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1421.2,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -40944,6 +41084,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1413,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "balrog",
           "score": 48.1,
           "source": "epoch.ai",
@@ -41325,6 +41473,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1413,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -41919,6 +42075,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1434.1,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -43185,6 +43349,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1443.9,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "balrog",
           "score": 57,
           "source": "epoch.ai",
@@ -43776,6 +43948,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1463.3,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -44590,6 +44770,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1456.1,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -47729,6 +47917,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1424.5,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -53418,6 +53614,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1464.7,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "chess_puzzles",
           "score": 34,
           "source": "epoch.ai",
@@ -57385,6 +57589,14 @@
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1434.8,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -66170,6 +66382,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1430.1,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "cl_bench",
           "score": 19.3,
           "source": "epoch.ai",
@@ -66450,6 +66670,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1450.7,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -76717,6 +76945,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1403.2,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "chess_puzzles",
           "score": 42,
           "source": "epoch.ai",
@@ -77054,6 +77290,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1403.2,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -77758,6 +78002,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1403.2,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "chess_puzzles",
           "score": 42,
           "source": "epoch.ai",
@@ -78120,6 +78372,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1401.1,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -78540,6 +78800,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1401.1,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "chess_puzzles",
           "score": 48,
           "source": "epoch.ai",
@@ -78949,6 +79217,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1401.1,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -80079,6 +80355,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1471,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -81449,6 +81733,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1485.7,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "blueprint_bench_2",
           "score": 36.23,
           "source": "epoch.ai",
@@ -81850,6 +82142,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1402.9,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -96373,6 +96673,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1416.2,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "blueprint_bench_2",
           "score": 0,
           "source": "epoch.ai",
@@ -96711,6 +97019,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1416.2,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -97282,6 +97598,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1416.2,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "blueprint_bench_2",
           "score": 0,
           "source": "epoch.ai",
@@ -97543,6 +97867,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1416.2,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -98103,6 +98435,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1452,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
           "league": "arena_search",
           "score": 1215.9,
           "source": "lmarena",
@@ -98503,6 +98843,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arena_document",
+          "score": 1452.3,
+          "source": "lmarena",
+          "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+          "unit": "elo"
         },
         {
           "attribution": "third-party",
@@ -104608,42 +104956,42 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-11-02T03:07:10.015Z",
+      "fetchedAt": "2026-11-02T03:25:39.450Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-11-02T03:07:10.015Z",
+      "fetchedAt": "2026-11-02T03:25:39.450Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 329 行；去重后 419 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-11-02T03:07:10.015Z",
+      "fetchedAt": "2026-11-02T03:25:39.450Z",
       "note": "请求 240 个开源模型，成功 236，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-11-02T03:07:10.015Z",
+      "fetchedAt": "2026-11-02T03:25:39.450Z",
       "note": "4552 条（对话类 3511 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-11-02T03:07:10.015Z",
+      "fetchedAt": "2026-11-02T03:25:39.450Z",
       "note": "LiveBench 2.0（2026-10 起）。上游整站重写，v1 的 table_<release>.csv / categories_<release>.json 已全部下线（404），数据改从 data/<release>/breakdown.json 取。2.0 是长程任务评测（跑几个月的运维、做 PPT/PDF、写研究报告），与 v1 的题目集不是同一把尺子，**两条赛制的分数不可比较**，故赛制 id 一律 `livebench2_` 前缀另起一池。release 20261025 是完整快照（七个分类每个都有全部型号），不需要像 v1 那样跨 release 取并集。`livebench2_overall` 是本站按七类等权算的均分，上游不发布这个数。",
       "ok": true
     },
     "lmarena": {
-      "fetchedAt": "2026-11-02T03:07:10.015Z",
-      "note": "6/7 个分榜，共 291 条 Arena 分；失败 document",
+      "fetchedAt": "2026-11-02T03:25:39.450Z",
+      "note": "7/7 个分榜，共 335 条 Arena 分",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-11-02T03:07:10.015Z",
-      "note": "models.json 607 条；api.json 235 provider / 8939 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "fetchedAt": "2026-11-02T03:25:39.450Z",
+      "note": "models.json 607 条；api.json 235 provider / 8937 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-11-02T03:07:10.015Z",
+      "fetchedAt": "2026-11-02T03:25:39.450Z",
       "note": "452 条；已剔除 artificial_analysis 186 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
@@ -104653,7 +105001,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-11-02T03:07:10.015Z",
+      "fetchedAt": "2026-11-02T03:25:39.450Z",
       "note": "498 条（language 320 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
