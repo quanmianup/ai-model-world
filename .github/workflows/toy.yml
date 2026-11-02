@@ -12,9 +12,9 @@ name: 发布到 B 站 Toy
 # 这个工作流只响应定时与手动触发，外部 PR 拿不到这个 Secret。
 
 on:
-  schedule:
-    # 02:30 UTC = 北京时间 10:30，排在早上那次同步（09:40）之后，也落在平台审核的工作时间里
-    - cron: '30 2 * * *'
+  # 定时跑已停用：这个 fork 里没有 B 站登录凭据（Secret TOY_CLI_SESSION_TOKEN），
+  # 每天 02:30 UTC 必然以「尚未登录」失败并给仓库所有人生成失败邮件。
+  # 需要送审时手动 Run workflow，并先按文件顶部的说明配好 Secret。
   workflow_dispatch:
     inputs:
       force:

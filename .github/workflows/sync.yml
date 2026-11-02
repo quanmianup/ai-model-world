@@ -17,8 +17,10 @@ on:
     # 实测连着跑两次多数时候只有几个价格小数点在动。真要抢时效就手动触发
     # （Actions 页的 Run workflow，或者 gh workflow run sync.yml），一分钟就跑完。
     #
-    # GitHub 的 cron 走 UTC，这里的 01:40 与 13:40 对应北京时间的 09:40 与 21:40。
-    - cron: '40 1,13 * * *'
+    # GitHub 的 cron 走 UTC，这里的 01:35 与 13:35 对应北京时间的 09:35 与 21:35。
+    # 刻意比 deploy.yml（01:40/13:40）早 5 分钟：那边构建前也会跑 npm run sync 并
+    # 提交快照，两边同一分钟抢 main 会让 push 被 fetch first 顶掉、天天失败发邮件。
+    - cron: '35 1,13 * * *'
   workflow_dispatch:
 
 # 只申请所需的最小权限：contents 用于提交快照，issues 用于同步失败时开 issue 留痕
@@ -80,7 +82,20 @@ jobs:
             console.log(\`\${s.models.length} 个模型（存活 \${alive}）· \${s.vendors.length} 家厂商\`);
           ")
           git commit -m "chore(data): 同步模型快照 — ${summary}"
-          git push
+
+          # 与 deploy.yml 的「Commit data snapshot」可能撞车：谁后推谁被 fetch first 顶掉。
+          # 先 rebase 到最新 main 再推，最多重试 3 次；仍然失败才算真失败。
+          pushed=0
+          for i in 1 2 3; do
+            git fetch origin main
+            git rebase --autostash origin/main || { git rebase --abort || true; }
+            if git push origin HEAD:main; then pushed=1; break; fi
+            sleep 10
+          done
+          if [ "$pushed" != "1" ]; then
+            echo "::error::重试 3 次仍未能推送到 main"
+            exit 1
+          fi
 
       # 闸门拦截时留下证据，方便回溯是哪一次上游出了问题
       - name: 上传同步报告
@@ -99,6 +114,9 @@ jobs:
       # 连续失败不会刷出一堆 issue，修好之后手动关掉那一条即可。
       - name: 同步失败时开 issue
         if: failure()
+        # 本仓库关闭了 Issues，这条留痕会 404。别让它把「同步失败」这一条失败
+        # 变成两条，掩盖真正的错误。
+        continue-on-error: true
         uses: actions/github-script@v7
         with:
           script: |
