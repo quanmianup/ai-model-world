@@ -27,7 +27,7 @@
     {
       "id": "aime",
       "inEci": true,
-      "models": 212,
+      "models": 213,
       "randomBaseline": 0.1,
       "releaseDate": "2024-12-19",
       "scoreCeiling": 100,
@@ -579,7 +579,7 @@
     {
       "id": "gpqa_diamond",
       "inEci": true,
-      "models": 215,
+      "models": 216,
       "randomBaseline": 25,
       "releaseDate": "2023-11-20",
       "scoreCeiling": 97,
@@ -987,7 +987,7 @@
     {
       "id": "proofbench",
       "inEci": true,
-      "models": 97,
+      "models": 98,
       "randomBaseline": 0,
       "releaseDate": "2026-01-30",
       "scoreCeiling": 100,
@@ -1035,7 +1035,7 @@
     {
       "id": "simpleqa_verified",
       "inEci": true,
-      "models": 109,
+      "models": 110,
       "randomBaseline": 0,
       "releaseDate": "2025-09-09",
       "scoreCeiling": 100,
@@ -1357,7 +1357,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-11-03T20:17:52.438Z",
+  "generatedAt": "2026-11-04T07:59:05.198Z",
   "models": [
     {
       "benchmarks": {
@@ -26978,11 +26978,11 @@
     },
     {
       "benchmarks": {
-        "aime": null,
+        "aime": 69.44,
         "arc_agi_2": null,
         "eci": null,
         "fiction_live": null,
-        "gpqa_diamond": null,
+        "gpqa_diamond": 77.59,
         "swe_bench_pro": null,
         "swe_bench_vendor": null,
         "swe_bench_verified": null,
@@ -27026,6 +27026,8 @@
         "outputPerMTok": 2
       },
       "provenance": {
+        "benchmarks.aime": "epoch.ai",
+        "benchmarks.gpqa_diamond": "epoch.ai",
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
@@ -27040,12 +27042,38 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "vercel-gateway",
         "releaseDatePrecision": "vercel-gateway",
+        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-09-01",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [],
+      "scores": [
+        {
+          "attribution": "third-party",
+          "league": "aime",
+          "score": 69.44,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "gpqa_diamond",
+          "score": 77.59,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "simpleqa_verified",
+          "score": 17.4,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        }
+      ],
       "slug": "bytedance-seed-seed-1-6",
       "trainingComputeFlop": null,
       "vendorId": "bytedance-seed"
@@ -31913,7 +31941,7 @@
         }
       ],
       "slug": "deepseek-deepseek-r1",
-      "trainingComputeFlop": 3.5e+24,
+      "trainingComputeFlop": 3.3e+24,
       "vendorId": "deepseek"
     },
     {
@@ -32146,7 +32174,7 @@
         }
       ],
       "slug": "deepseek-deepseek-r1-0528",
-      "trainingComputeFlop": 4.020010000000001e+24,
+      "trainingComputeFlop": 3.3e+24,
       "vendorId": "deepseek"
     },
     {
@@ -36831,7 +36859,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.006,
         "inputPerMTok": 0.245938,
-        "outputPerMTok": 1.2
+        "outputPerMTok": 1.19015
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -70260,7 +70288,7 @@
       "id": "nvidia/nemotron-3.5-super-vl",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 235929,
+      "maxOutput": 943718,
       "modalities": {
         "input": [
           "image",
@@ -94119,6 +94147,86 @@
       },
       "capabilities": {
         "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 1048576,
+      "firstSeenAt": "2026-11-04T07:59:05.198Z",
+      "id": "tencent/hy4",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 65536,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "HY4",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 2,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.021,
+        "inputPerMTok": 0.417,
+        "outputPerMTok": 1.2505
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "openrouter",
+        "pricing.outputPerMTok": "openrouter",
+        "releaseDate": "vercel-gateway",
+        "releaseDatePrecision": "vercel-gateway",
+        "scores": "derived",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-03",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [
+        {
+          "attribution": "third-party",
+          "league": "proofbench",
+          "score": 75,
+          "source": "epoch.ai",
+          "sourceUrl": "https://www.vals.ai/benchmarks/proof_bench",
+          "unit": "pct"
+        }
+      ],
+      "slug": "tencent-hy4",
+      "trainingComputeFlop": null,
+      "vendorId": "tencent"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -104295,7 +104403,7 @@
         "modalities": "vercel-gateway",
         "name": "derived",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.cachedInputPerMTok": "vercel-gateway",
         "pricing.inputPerMTok": "vercel-gateway",
         "pricing.outputPerMTok": "vercel-gateway",
         "releaseDate": "vercel-gateway",
@@ -105100,43 +105208,43 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-11-03T20:17:52.438Z",
+      "fetchedAt": "2026-11-04T07:59:05.198Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-11-03T20:17:52.438Z",
-      "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 334 行；去重后 420 个模型实体；合规拦截 1 个文件",
+      "fetchedAt": "2026-11-04T07:59:05.198Z",
+      "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 334 行；去重后 426 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-11-03T20:17:52.438Z",
+      "fetchedAt": "2026-11-04T07:59:05.198Z",
       "note": "请求 240 个开源模型，成功 236，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-11-03T20:17:52.438Z",
-      "note": "4567 条（对话类 3518 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-11-04T07:59:05.198Z",
+      "note": "4525 条（对话类 3483 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-11-03T20:17:52.438Z",
+      "fetchedAt": "2026-11-04T07:59:05.198Z",
       "note": "LiveBench 2.0（2026-10 起）。上游整站重写，v1 的 table_<release>.csv / categories_<release>.json 已全部下线（404），数据改从 data/<release>/breakdown.json 取。2.0 是长程任务评测（跑几个月的运维、做 PPT/PDF、写研究报告），与 v1 的题目集不是同一把尺子，**两条赛制的分数不可比较**，故赛制 id 一律 `livebench2_` 前缀另起一池。release 20261025 是完整快照（七个分类每个都有全部型号），不需要像 v1 那样跨 release 取并集。`livebench2_overall` 是本站按七类等权算的均分，上游不发布这个数。",
       "ok": true
     },
     "lmarena": {
-      "fetchedAt": "2026-11-03T20:17:52.438Z",
+      "fetchedAt": "2026-11-04T07:59:05.198Z",
       "note": "7/7 个分榜，共 335 条 Arena 分",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-11-03T20:17:52.438Z",
-      "note": "models.json 607 条；api.json 235 provider / 8925 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "fetchedAt": "2026-11-04T07:59:05.198Z",
+      "note": "models.json 607 条；api.json 235 provider / 8928 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-11-03T20:17:52.438Z",
-      "note": "454 条；已剔除 artificial_analysis 192 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-04T07:59:05.198Z",
+      "note": "455 条；已剔除 artificial_analysis 194 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -105145,8 +105253,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-11-03T20:17:52.438Z",
-      "note": "497 条（language 319 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-04T07:59:05.198Z",
+      "note": "498 条（language 320 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
