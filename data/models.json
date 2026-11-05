@@ -1357,7 +1357,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-11-05T08:28:39.246Z",
+  "generatedAt": "2026-11-05T20:49:32.626Z",
   "models": [
     {
       "benchmarks": {
@@ -7101,7 +7101,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -7129,7 +7129,7 @@
         "totalB": 81.32
       },
       "pricing": {
-        "cachedInputPerMTok": 0.07,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.5,
         "outputPerMTok": 2
       },
@@ -7146,7 +7146,6 @@
         "openWeights": "models.dev",
         "params.activeB": "derived",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "openrouter",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -22742,7 +22741,7 @@
         {
           "attribution": "third-party",
           "league": "spireclimb",
-          "score": 3.33,
+          "score": 5.83,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -22750,7 +22749,7 @@
         {
           "attribution": "third-party",
           "league": "spireclimb_sts1_a20_heart",
-          "score": 0,
+          "score": 5,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -35367,7 +35366,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.028,
-        "inputPerMTok": 0.15,
+        "inputPerMTok": 0.142,
         "outputPerMTok": 0.3
       },
       "provenance": {
@@ -36830,8 +36829,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.247874,
-        "outputPerMTok": 1.19015
+        "inputPerMTok": 0.246928,
+        "outputPerMTok": 1.2
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -42391,7 +42390,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": false
@@ -42424,7 +42423,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.05,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.5,
         "outputPerMTok": 3
       },
@@ -42439,7 +42438,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -46580,8 +46578,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 1.5152,
-        "outputPerMTok": 9.0909
+        "inputPerMTok": 1.5,
+        "outputPerMTok": 9
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -46622,6 +46620,77 @@
         }
       ],
       "slug": "google-gemini-omni-1-1-flash",
+      "trainingComputeFlop": null,
+      "vendorId": "google"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": false,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 131072,
+      "firstSeenAt": "2026-11-05T20:49:32.626Z",
+      "id": "google/gemini-omni-1.2-flash",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 65536,
+      "modalities": {
+        "input": [
+          "image",
+          "text",
+          "video"
+        ],
+        "output": [
+          "text",
+          "video"
+        ]
+      },
+      "name": "Gemini Omni 1.2 Flash",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 2,
+        "sizeTierBasis": "price+naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": 1.5,
+        "outputPerMTok": 9
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
+        "releaseDate": "vercel-gateway",
+        "releaseDatePrecision": "vercel-gateway",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-05",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "google-gemini-omni-1-2-flash",
       "trainingComputeFlop": null,
       "vendorId": "google"
     },
@@ -51304,7 +51373,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -51332,7 +51401,7 @@
         "totalB": 70.55
       },
       "pricing": {
-        "cachedInputPerMTok": 0.16,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.72,
         "outputPerMTok": 0.72
       },
@@ -51350,7 +51419,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -52604,7 +52672,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.13,
         "inputPerMTok": 0.59,
-        "outputPerMTok": 0.71
+        "outputPerMTok": 0.724
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -56255,11 +56323,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-01-15",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-11-05",
       "scores": [],
       "slug": "minimax-minimax-01",
       "trainingComputeFlop": null,
@@ -56596,12 +56665,12 @@
         "pricing.cachedInputPerMTok": "litellm",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "scores": "derived",
         "vendorId": "derived"
       },
-      "releaseDate": "2025-10-23",
+      "releaseDate": "2025-10-27",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -56655,7 +56724,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -56679,18 +56748,15 @@
       "openWeights": false,
       "params": {
         "activeB": null,
-        "confidence": "estimated",
-        "sizeTier": 2,
-        "sizeTierBasis": "price",
+        "confidence": "unknown",
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.03,
-        "inputPerMTok": 0.3,
-        "outputPerMTok": 1.2
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -56698,10 +56764,6 @@
         "modalities": "models.dev",
         "name": "models.dev",
         "openWeights": "models.dev",
-        "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
@@ -59578,8 +59640,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.33801,
-        "outputPerMTok": 0.45068
+        "inputPerMTok": 0.33672,
+        "outputPerMTok": 0.44896
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -84504,7 +84566,7 @@
         {
           "attribution": "third-party",
           "league": "spireclimb",
-          "score": 25.67,
+          "score": 34,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -84512,7 +84574,7 @@
         {
           "attribution": "third-party",
           "league": "spireclimb_sts1_a20_heart",
-          "score": 16.67,
+          "score": 33.33,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -85939,7 +86001,7 @@
         {
           "attribution": "third-party",
           "league": "spireclimb",
-          "score": 24.67,
+          "score": 23.83,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -85947,7 +86009,7 @@
         {
           "attribution": "third-party",
           "league": "spireclimb_sts1_a20_heart",
-          "score": 20,
+          "score": 18.33,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -86316,7 +86378,7 @@
         {
           "attribution": "third-party",
           "league": "spireclimb",
-          "score": 19.83,
+          "score": 22.33,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -86324,7 +86386,7 @@
         {
           "attribution": "third-party",
           "league": "spireclimb_sts1_a20_heart",
-          "score": 5,
+          "score": 10,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -90904,8 +90966,8 @@
         "totalB": 501.2
       },
       "pricing": {
-        "cachedInputPerMTok": 0.05,
-        "inputPerMTok": 0.25,
+        "cachedInputPerMTok": 0.04,
+        "inputPerMTok": 0.3,
         "outputPerMTok": 1
       },
       "provenance": {
@@ -91399,7 +91461,7 @@
         "totalB": 65
       },
       "pricing": {
-        "cachedInputPerMTok": 0.02,
+        "cachedInputPerMTok": 0.05,
         "inputPerMTok": 0.2,
         "outputPerMTok": 0.6
       },
@@ -91410,7 +91472,7 @@
         "modalities": "openrouter",
         "name": "derived",
         "params.totalB": "derived",
-        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.cachedInputPerMTok": "openrouter",
         "pricing.inputPerMTok": "litellm",
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "openrouter",
@@ -105279,43 +105341,43 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-11-05T08:28:39.246Z",
+      "fetchedAt": "2026-11-05T20:49:32.626Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-11-05T08:28:39.246Z",
+      "fetchedAt": "2026-11-05T20:49:32.626Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 334 行；去重后 416 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-11-05T08:28:39.246Z",
+      "fetchedAt": "2026-11-05T20:49:32.626Z",
       "note": "请求 240 个开源模型，成功 236，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-11-05T08:28:39.246Z",
-      "note": "4742 条（对话类 3694 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-11-05T20:49:32.626Z",
+      "note": "4756 条（对话类 3706 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-11-05T08:28:39.246Z",
+      "fetchedAt": "2026-11-05T20:49:32.626Z",
       "note": "LiveBench 2.0（2026-10 起）。上游整站重写，v1 的 table_<release>.csv / categories_<release>.json 已全部下线（404），数据改从 data/<release>/breakdown.json 取。2.0 是长程任务评测（跑几个月的运维、做 PPT/PDF、写研究报告），与 v1 的题目集不是同一把尺子，**两条赛制的分数不可比较**，故赛制 id 一律 `livebench2_` 前缀另起一池。release 20261025 是完整快照（七个分类每个都有全部型号），不需要像 v1 那样跨 release 取并集。`livebench2_overall` 是本站按七类等权算的均分，上游不发布这个数。",
       "ok": true
     },
     "lmarena": {
-      "fetchedAt": "2026-11-05T08:28:39.246Z",
+      "fetchedAt": "2026-11-05T20:49:32.626Z",
       "note": "7/7 个分榜，共 339 条 Arena 分",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-11-05T08:28:39.246Z",
-      "note": "models.json 608 条；api.json 235 provider / 8944 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "fetchedAt": "2026-11-05T20:49:32.626Z",
+      "note": "models.json 608 条；api.json 235 provider / 8943 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-11-05T08:28:39.246Z",
-      "note": "455 条；已剔除 artificial_analysis 193 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-05T20:49:32.626Z",
+      "note": "454 条；已剔除 artificial_analysis 194 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -105324,8 +105386,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-11-05T08:28:39.246Z",
-      "note": "499 条（language 320 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-05T20:49:32.626Z",
+      "note": "495 条（language 318 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
