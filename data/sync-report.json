@@ -1962,7 +1962,7 @@
     },
     "liveModels": 703
   },
-  "generatedAt": "2026-11-07T07:44:30.232Z",
+  "generatedAt": "2026-11-07T18:16:59.283Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。**2026-10 起上游改版成 LiveBench 2.0**，榜单数据在 data/<release>/breakdown.json，release 清单从站点 JS bundle 里解析（上游每发一版就把 id 加进那个数组），解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。2.0 的七个分类与 v1 的两个分组是**不同的赛制**：id 带 livebench2_ 前缀，分数不可互相比较。v1 时期的老规矩一并记着：releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 30,
@@ -2031,7 +2031,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4767 条（对话类 3715 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4770 条（对话类 3715 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -2043,7 +2043,7 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 609 条；api.json 235 provider / 8941 条；benchmarks[] 1174 条，已拦截 AA 血缘 184 条，非编程口径跳过 609 条",
+      "note": "models.json 609 条；api.json 235 provider / 8943 条；benchmarks[] 1174 条，已拦截 AA 血缘 184 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
